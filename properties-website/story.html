@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Story - Jwang Properties</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./assets/css/style.css"
+    />
+    <script src="main.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="/dist/output.css" rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!--Header-->
+    <header class="relative">
+      <div
+        class="main_header absolute z-50 top-0 right-0 left-0 w-full bg-transparent border-b text-white font-semibold border-b-gray-50 flex justify-between align-middle items-center p-5 px-10 sm:px-20 md:px-32"
+      >
+        <a class="text-xl font-semibold" href="./index.html">
+          <img
+            class="w-[90px] h-[90px] object-contain mx-auto"
+            src="./assets/images/real-logo.png"
+            alt="Logo"
+          />
+        </a>
+
+        <nav class="hidden md:block">
+          <ul>
+            <li class="font-[600] leading-[40px] cursor-pointer">
+              <a href="./index.html">Home</a>
+            </li>
+
+            <!-- About -->
+            <li class="group font-[600] leading-[40px] relative cursor-pointer">
+              <div class="flex gap-2 align-middle justify-center items-center">
+                <span class="group-hover:text-blue-500">About</span>
+                <svg
+                  class="w-6 h-6 p-1 group-hover:text-blue-500 group-hover:rotate-180 transition duration-200 group-hover:duration-200"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </div>
+
+              <!-- Sub Menu -->
+              <div
+                class="hidden group-hover:block h-max absolute top-[90%] bg-white text-black p-0 -left-5 w-[250px] border border-gray-200"
+              >
+                <ul class="flex flex-col">
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="./about.html" class="font-[600]"
+                      >About Jwang Properties</a
+                    >
+                  </li>
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="./story.html" class="font-[600]">My Story</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <!-- Search -->
+            <li class="group font-[600] leading-[40px] relative cursor-pointer">
+              <div class="flex gap-2 align-middle justify-center items-center">
+                <span class="group-hover:text-blue-500">Search</span>
+                <svg
+                  class="w-6 h-6 p-1 group-hover:text-blue-500 group-hover:rotate-180 transition duration-200 group-hover:duration-200"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </div>
+
+              <!-- Sub Menu -->
+              <div
+                class="hidden group-hover:block h-max absolute top-[90%] bg-white text-black p-0 -left-5 w-[250px] border border-gray-200"
+              >
+                <ul class="flex flex-col">
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="#" class="font-[600]">Search For Homes</a>
+                  </li>
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="#" class="font-[600]">Search With Maps</a>
+                  </li>
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="#" class="font-[600]">Search Neigbours</a>
+                  </li>
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="#" class="font-[600]">Search Schools</a>
+                  </li>
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="#" class="font-[600]">Commercial Properties</a>
+                  </li>
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="#" class="font-[600]"
+                      >Search International Listings</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <!-- Listings -->
+            <li class="group font-[600] leading-[40px] relative cursor-pointer">
+              <div class="flex gap-2 align-middle justify-center items-center">
+                <span class="group-hover:text-blue-500">Listings</span>
+                <svg
+                  class="w-6 h-6 p-1 group-hover:text-blue-500 group-hover:rotate-180 transition duration-200 group-hover:duration-200"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </div>
+
+              <!-- Sub Menu -->
+              <div
+                class="hidden group-hover:block h-max absolute top-[90%] bg-white text-black p-0 -left-5 w-[250px] border border-gray-200"
+              >
+                <ul class="flex flex-col">
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="./listings.html" class="font-[600]"
+                      >All Listings</a
+                    >
+                  </li>
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="./solid-listings.html" class="font-[600]"
+                      >Solid Listings</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="font-[600] leading-[40px] cursor-pointer">
+              <a href="./OurAgent.html">Meet Our Agents</a>
+            </li>
+            <li class="font-[600] leading-[40px] cursor-pointer">
+              <a href="./testimonials.html">Testimonials</a>
+            </li>
+
+            <li class="font-[600] leading-[40px] cursor-pointer">
+              <a href="./contact.html">Contact Us</a>
+            </li>
+            <li class="font-[600] leading-[40px] cursor-pointer">
+              <a href="./login.html">LOGIN</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Header Menu Bar -->
+        <span class="text-black show_aside block md:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-12 p-2 h-12 text-white"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </span>
+      </div>
+
+      <!-- Hero -->
+      <div
+        class="hero relative h-[500px] top-0 bg-[url('./assets/images/story-bg.jpg')] bg-blend-normal px-32"
+        style="height: 500px;"
+      >
+        <div
+          class="flex flex-col justify-center align-middle items-center md:items-start h-full gap-10 w-full px-10 md:px-0 max-w-full md:max-w-[800px] m-auto md:m-0"
+        >
+          <h2
+            class="text-white font-[600] text-[30px] sm:text-[40px] md:text-[50px] leading-none md:leading-[30px] capitalize text-center md:text-left"
+          >
+            My Story: #BrokerJenny
+          </h2>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="px-6 md:px-44 py-10 md:py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="flex flex-col gap-5">
+            <img
+              src="./assets/images/award-removebg-preview-300x300.png"
+              alt="Award Logo"
+              class="w-36 h-36"
+            />
+            <h4
+              class="font-semibold text-lg sm:text-xl md:text-2xl leading-[28px] md:leading-[30px] lg:leading-[36px]"
+              style="font-family: 'Barlow', sans-serif;"
+            >
+              1st Honorable Award Of Literary Fiction From "The Bookfest!
+            </h4>
+
+            <p
+              style="font-family: 'Open Sans', sans-serif;"
+              class="font-[400] text-[16px] leading-[30px] text-[#5a5a5a]"
+            >
+              I was born and raised in Beijing. I immigrated to Houston in 1991.
+              I graduated from Conrad N. Hilton College of Global Hospitality
+              Leadership of University of Houston. I had always been working on
+              the restaurant’s side of the business as a student, so naturally,
+              I was offered a “restaurant’s manager” job after I graduated. It
+              was different running a restaurant in the real-world compared to
+              working at our “magic-kingdom-like” Hilton College. Instead of
+              setting a goal to climb up the managerial ladder, I was only
+              frizzled by the daily operational stress. Being exhausted, I sank
+              into a phrase of “lost,” not sure who I was, what I was doing and
+              why I was there. I was up for a change. I went back to Hilton
+              College to take some graduate courses. I thought the idea of
+              pursuing a master’s degree may elevate me. But it didn’t. I was
+              bored after finishing a few initial courses. I felt like drifting
+              trough a dark tunnel. Until eventually, one day, some friends
+              talked me into selling real estate. Real estate, it sounded so
+              new, yet I felt invigorated. I saw a light at the end of the
+              tunnel.
+            </p>
+            <p
+              style="font-family: 'Open Sans', sans-serif;"
+              class="font-[400] text-[16px] leading-[30px] text-[#5a5a5a]"
+            >
+              Without much hesitation, I had dived into it without any
+              experience, knowledge nor clienteles. Yet my heart was full, full
+              of hope and determination. Obtained my licenses in August 2002, I
+              joined RE/MAX and started my career as a REALTOR. In the following
+              16 years, I grew with the Metro team, personally and
+              professionally. Rain, or shine, I had never thought of changing
+              brokerage. I stayed where I was. During those years, I rose,
+              failed, and rose again. I earned countless awards, Top Producer,
+              RE/MAX 20/20, Hall of Fame…along with the ups and downs in life,
+              market fluctuation, and all the hurricanes we survived.
+            </p>
+          </div>
+
+          <div>
+            <img src="./assets/images/story-image.jpeg" alt="Story Images" />
+          </div>
+        </div>
+
+        <div class="block relative flex flex-col gap-6 pt-10">
+          <p
+            style="font-family: 'Open Sans', sans-serif;"
+            class="font-[400] text-[16px] leading-[30px] text-[#5a5a5a]"
+          >
+            In 2014, I joined the Women’s Council of REALTORs Houston network. I
+            served on board and started as VP of Membership. In 2016, I was
+            honored to be the President of the Women’s Council Houston network.
+            I served with passion and learned with heart. Serving the network
+            helped me to root deeply in our industry. I was enlightened, in a
+            sense of becoming aware of who I was, where I was and what I was
+            doing. I gained a deeper and better understanding of what it meant
+            to be Me as a REALTOR. I was no longer lost. I found myself. Through
+            building strong relationships, I was bonded with our business,
+            industry, and communities. “JWang on the block” was on the horizon.
+          </p>
+          <p
+            style="font-family: 'Open Sans', sans-serif;"
+            class="font-[400] text-[16px] leading-[30px] text-[#5a5a5a]"
+          >
+            By that time, we had already lived in the social media platform era
+            for some years. Since Facebook was launched in 2004, many other
+            popular apps were up hastily like popcorns. Though some called it
+            “disruption,” I called it “revolution.” We evolved into a new way of
+            communication and marketing. Serving the Women’s Council, we fully
+            utilized social media to connect members, create educational
+            programs and networking events. I was doing a lot of photos and
+            video clips then, sort of the “president” accidentally turned into a
+            “photographer.” Nonetheless, the more I did it, the more I felt a
+            “need,” a “need” for a professional media presentation that can
+            truly reflect us, our image, and our voice. So, I thought, what if I
+            build a video production?
+          </p>
+          <p
+            style="font-family: 'Open Sans', sans-serif;"
+            class="font-[400] text-[16px] leading-[30px] text-[#5a5a5a]"
+          >
+            In February of 2018, I founded JWang Media, a production to promote
+            and market our real estate professionals through “story telling”
+            type of custom videos. Whether it’s about a REALTOR’s profile, a
+            lender’s insight, a title company’s statement, a networking event,
+            or a property highlight, every quick video presents a theme, a
+            personality, and an expertise. Since then, we’ve created, crafted,
+            and produced many videos to blast out via social media platforms.
+            Not only the listings gained more “limelight” but also the
+            professionals gained the “stardom.” In result, we received more than
+            hundreds of thousands of viewers. The audience liked and
+            complimented the true voices and authentic messages. It’s been a
+            popular marketing approach that delivered both value and joy.
+          </p>
+          <p
+            style="font-family: 'Open Sans', sans-serif;"
+            class="font-[400] text-[16px] leading-[30px] text-[#5a5a5a]"
+          >
+            A few months later in the same year, in November 2018, I obtained my
+            broker license. I established JWang Properties, a Boutique realty
+            with personal touch. I declared that “through our innovative system
+            and custom video production, JWang Properties advances REALTORs to
+            be the Superstars to serve our clients, industry, and communities.
+            We offer one stop customized strategies and service plans tailored
+            to each client’s individual needs in both residential and commercial
+            real estate.” You can imagine, however, holding my broker license
+            and looking around, it was only me, a broker/ agent of JWang
+            Properties. Yet that didn’t bother me. I planned a Grand Open Party
+            to draw the curtain of a new phrase. It was a perfect time to
+            celebrate and thank the support from friends, colleagues, industry,
+            and communities.
+          </p>
+          <p
+            style="font-family: 'Open Sans', sans-serif;"
+            class="font-[400] text-[16px] leading-[30px] text-[#5a5a5a]"
+          >
+            Today, less than four years later, we have top producers and expert
+            agents in both residential and commercial fields. Together we bring
+            value to our clients and strive for multi-million and more sales
+            volumes. Value, no doubt, is what we produce and deliver. Yet we
+            offer more. We offer joy. I believe many REALTORs out there can
+            relate, that when it comes to representing our clients, their
+            problems become our problems and their happiness become our
+            happiness. We get on this journey together, sharing the experiences
+            and building the memories. As REALTORs, we are the hub and personal
+            touch in every transaction. Even when we fail to close the deal
+            sometimes, we let our relationships prevail. This is how we define
+            us, a JWang team.
+          </p>
+          <p
+            style="font-family: 'Open Sans', sans-serif;"
+            class="font-[400] text-[16px] leading-[30px] text-[#5a5a5a]"
+          >
+            In July 2019, I started to draft my debut, a novel, “Girl Wears
+            Those Shoes.” Writing has always been a great part of me and
+            finally, I decided to put it into a perspective. I’ve been a fiction
+            lover, so I wanted to venture into that. There was no doubt that
+            “creating a fiction” was the toughest project I had carried on. I
+            wanted to portrait characters that can inspire young professionals
+            in the business. I wanted to share the ideas, experiences, answers,
+            values, and even controversial issues in a young REALTOR’s life.
+          </p>
+          <p
+            style="font-family: 'Open Sans', sans-serif;"
+            class="font-[400] text-[16px] leading-[30px] text-[#5a5a5a]"
+          >
+            The story came together towards the end of summer of 2021. The
+            protagonist of the story, Gigi O, represents a new model of Chinese
+            immigrants of our time. Through her personal and professional
+            growth, the spirit, principle, and value are universal. The battle,
+            discipline, and the strength it takes to run through the course are
+            the same for everybody, regardless of any race, sex, or ethnic
+            background. The triumph, like the Red Sole, does not prejudice. It
+            loves the woman who rocks it!
+          </p>
+          <p
+            style="font-family: 'Open Sans', sans-serif;"
+            class="font-[400] text-[16px] leading-[30px] text-[#5a5a5a]"
+          >
+            On December 14, 2021, “Girl Wears Those Shoes” was officially
+            released. I had a Holliday launch celebration party prior to that.
+            I’m grateful for receiving much positive feedback. “It’s a fun
+            read!” “I’ve never known it takes that much to be working as a
+            REALTOR!” “I’ve learned a lot about real estate!” ….. I’ve always
+            told people that my approach to the book is: “If you want to learn,
+            you learn. If you don’t want to learn, at least you will be
+            entertained!” The joy is what we love to bring and share! We love
+            what we do. It’s a journey. Why not make it fun?!
+          </p>
+          <p
+            style="font-family: 'Open Sans', sans-serif;"
+            class="font-[400] text-[16px] leading-[30px] text-[#5a5a5a]"
+          >
+            In January 2022, we officially launched our new website:
+            <a href="./index.html" class="text-red-500"
+              >www.jennywanghouston.com.</a
+            >
+          </p>
+          <p
+            style="font-family: 'Open Sans', sans-serif;"
+            class="font-[400] text-[16px] leading-[30px] text-[#5a5a5a]"
+          >
+            This new site contains three landing parts: “JWang Properties”,
+            “JWang Media” & “Girl Wears Those Shoes”. The book page leads to:
+            <a href="./index.html" class="text-red-500"
+              >www.jennywanghouston.com.</a
+            >
+            There, I have created a donation button for our Houston Ballet,
+            supporting the art and performance of our city.
+          </p>
+          <p
+            style="font-family: 'Open Sans', sans-serif;"
+            class="font-[400] text-[16px] leading-[30px] text-[#5a5a5a]"
+          >
+            Welcome to our JWang Family, an entity of Business with Culture. And
+            sincerely, from the bottom of my heart, I am your #BrokerJenny!
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!--Footer by Fortune-->
+    <footer class="bg-[#19212d]">
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 items-center p-10 border-b border-b-black justify-center"
+      >
+        <div class="space-y-5 px-0 mb-10">
+          <div class="w-full">
+            <img
+              class="w-[100px] rounded-full mx-[40px]"
+              src="./assets/images/logo-small-200.jpg"
+              alt=""
+            />
+          </div>
+
+          <p class="max-w-sm text-slate-200 px-0 mb-5 md:px-10 md:mb-0">
+            We offer one stop customized Strategies and Services Plans tailored
+            to each client's individual needs in both residential and commercial
+            real estate
+          </p>
+
+          <!-- Social Icons -->
+          <div
+            class="flex items-center md:justify-center text-white text-[25px] relative flex-row gap-3 pb-5"
+          >
+            <a href="">
+              <i
+                class="fab fa-facebook bg-red-600 p-2 rounded-full hover: bg-white hover:text-blue-500"
+                aria-hidden="true"
+              ></i>
+            </a>
+            <a href="">
+              <i
+                class="fab fa-twitter-square bg-red-600 p-2 rounded-full hover: bg-white hover:text-blue-500"
+                aria-hidden="true"
+              ></i>
+            </a>
+            <a href="">
+              <i
+                class="fab fa-youtube bg-red-600 p-2 rounded-full hover: bg-white hover:text-blue-500"
+                aria-hidden="true"
+              ></i>
+            </a>
+            <a href="">
+              <i
+                class="fab fa-instagram bg-red-600 p-2 rounded-full hover: bg-white hover:text-blue-500"
+                aria-hidden="true"
+              ></i>
+            </a>
+          </div>
+        </div>
+        <div
+          class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 col-span-3"
+        >
+          <div class="space-y-3 text-white">
+            <div>
+              <h1 class="text-xl font-medium">Our Company</h1>
+            </div>
+
+            <div class="text-slate-200">
+              <a href="./about.html"><p>About Company</p></a>
+              <a href="./contact.html"><p>Contact</p></a>
+              <a href="./policy.html"><p>Privacy Policy</p></a>
+              <p>Terms and Conditions</p>
+            </div>
+          </div>
+          <div class="space-y-3 text-white">
+            <div>
+              <h1 class="font-medium text-xl">Our Services</h1>
+            </div>
+
+            <div class="text-slate-200">
+              <p>News</p>
+              <p>Video Production</p>
+              <p>Home Finding</p>
+              <p>Search Schools</p>
+            </div>
+          </div>
+          <div class="space-y-5 text-white">
+            <div>
+              <h1 class="font-lg text-lg">Contact details</h1>
+            </div>
+            <div class="text-slate-200">
+              <p>2925 Richmond Ave, Ste 1200</p>
+              <p>Houston, Tx 77098</p>
+              <p>(281)451-0185</p>
+              <p>jennywangrealestate@gmail.com</p>
+            </div>
+          </div>
+
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 gap-5 md:block md:flex-row"
+          >
+            <div class="text-white text-sm">
+              <p>Texas Real Estate Commission Consumer</p>
+              <p>Protection Notice</p>
+            </div>
+
+            <div class="text-white text-sm">
+              <p>Texas Real Estate Commission Consumer</p>
+              <p>Protection Notice</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="flex flex-col md:flex-row justify-between items-center p-4 lg:p-[30px] align-center px-10 md:px-[90px] text-xs"
+      >
+        <p class="text-slate-200 align-center">
+          Copyright &copy; 2022 JWang Properties
+        </p>
+        <p class="text-slate-200 align-center">Powered by jwang Properties</p>
+      </div>
+    </footer>
+  </body>
+</html>

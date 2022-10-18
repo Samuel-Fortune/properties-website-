@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,900&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+html,
+body {
+  padding: 0px;
+  margin: 0px;
+}
+html {
+  scroll-behaviour: smooth;
+}
+:root {
+  --spacing-all: 20px 50px;
+}
+
+/* Header Stylimg Start */
+header {
+  font-family: "Barlow", sans-serif;
+}
+
+header .az_fixed {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: white;
+  color: black;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 2px 4px 5px -5px rgb(0 0 0 / 60%);
+  transition: all 0.1s ease-in;
+}
+
+header ul li {
+  font-weight: 600;
+}
+header .hero {
+  height: 800px;
+  position: relative;
+  font-family: "Barlow", sans-serif;
+  background-blend-mode: overlay;
+  background-color: #2a2626;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+header ul {
+  display: inline-flex;
+}
+
+header ul li {
+  padding: 0px 15px;
+  text-transform: uppercase;
+}
+/* Header Styling END */
+
+/* Our Family */
+.our_family {
+  display: flex;
+  gap: 10px;
+}
+/* End our family */
+
+/* Our Clients */
+.Aizenosa:hover {
+  background-color: #ff702d;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.Aizenosa {
+  box-shadow: 0px 4px 18px 3px rgb(199 67 67 / 46%);
+  transition: all 0.2s ease-in;
+}
+
+.wrapper_image img {
+  filter: brightness(80%) contrast(100%) saturate(0%) blur(0px) hue-rotate(0deg);
+}
+
+.wrapper_image img:hover {
+  cursor: pointer;
+  filter: brightness(105%) contrast(94%) saturate(100%) blur(0px);
+}
+/* Our Clients */
+
+/* Section CTA*/
+.CTA {
+  width: 100%;
+  background-color: blue;
+  background-attachment: fixed;
+  height: 40%;
+  padding-top: 9%;
+  padding-bottom: 9%;
+  padding-left: 20%;
+  padding-right: 20%;
+  color: white;
+  background-blend-mode: overlay;
+  background-color: #2f4462;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.CTA .content h2 {
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.CTA .content p {
+  text-align: center;
+}
+
+/* Lower part of the main */
+.service {
+  width: 100%;
+  background-attachment: fixed;
+  background-image: url(../images/agent-operations-real-estate-marketing-AdobeStock_122982687.jpeg);
+  height: 320px;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.service .outer {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-left: 110px;
+  bottom: 8px;
+  top: 95px;
+}
+.service .inner {
+  background-color: #181f2a;
+  opacity: 0.5;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+/* Lower part of the main */
+
+/* contact us page */
+
+.contact_us input,
+.contact_us textarea {
+  display: block;
+
+  border: 1px solid #ccc;
+  margin: 20px;
+  padding: 10px 10px;
+  width: calc(100% - 40px);
+}
+
+/* Responsiveness Breakpoints for Mini Laptop */
+@media screen and (max-width: 1200px) {
+}
+/* Responsiveness Breakpoints for Samsung Lanscape Phones / Ipad */
+@media screen and (max-width: 800px) {
+}
+/* Responsiveness Breakpoints Andriod Phones */
+@media screen and (max-width: 560px) {
+}
+/* Responsiveness Breakpoints for Iphones */
+@media screen and (max-width: 420px) {
+}
+/* Responsiveness Breakpoints for iphones / Andriod */
+@media screen and (max-width: 380px) {
+}
+/* End responsiveness */

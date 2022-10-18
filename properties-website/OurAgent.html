@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Team-jwang properties</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./assets/css/style.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="/dist/output.css" rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  </head>
+  <body>
+    <!--Header-->
+    <header class="relative">
+      <div
+        class="main_header absolute z-50 top-0 right-0 left-0 w-full bg-transparent border-b text-white font-semibold border-b-gray-50 flex justify-between align-middle items-center p-5 px-10 sm:px-20 md:px-32"
+      >
+        <a class="text-xl font-semibold" href="./index.html">
+          <img
+            class="w-[90px] h-[90px] object-contain mx-auto"
+            src="./assets/images/real-logo.png"
+            alt="Logo"
+          />
+        </a>
+
+        <nav class="hidden md:block">
+          <ul>
+            <li class="font-[600] leading-[40px] cursor-pointer">
+              <a href="./index.html">Home</a>
+            </li>
+
+            <!-- About -->
+            <li class="group font-[600] leading-[40px] relative cursor-pointer">
+              <div class="flex gap-2 align-middle justify-center items-center">
+                <span class="group-hover:text-blue-500">About</span>
+                <svg
+                  class="w-6 h-6 p-1 group-hover:text-blue-500 group-hover:rotate-180 transition duration-200 group-hover:duration-200"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </div>
+
+              <!-- Sub Menu -->
+              <div
+                class="hidden group-hover:block h-max absolute top-[90%] bg-white text-black p-0 -left-5 w-[250px] border border-gray-200"
+              >
+                <ul class="flex flex-col">
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="./about.html" class="font-[600]"
+                      >About Jwang Properties</a
+                    >
+                  </li>
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="./story.html" class="font-[600]">My Story</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <!-- Search -->
+            <li class="group font-[600] leading-[40px] relative cursor-pointer">
+              <div class="flex gap-2 align-middle justify-center items-center">
+                <span class="group-hover:text-blue-500">Search</span>
+                <svg
+                  class="w-6 h-6 p-1 group-hover:text-blue-500 group-hover:rotate-180 transition duration-200 group-hover:duration-200"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </div>
+
+              <!-- Sub Menu -->
+              <div
+                class="hidden group-hover:block h-max absolute top-[90%] bg-white text-black p-0 -left-5 w-[250px] border border-gray-200"
+              >
+                <ul class="flex flex-col">
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="#" class="font-[600]">Search For Homes</a>
+                  </li>
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="#" class="font-[600]">Search With Maps</a>
+                  </li>
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="#" class="font-[600]">Search Neigbours</a>
+                  </li>
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="#" class="font-[600]">Search Schools</a>
+                  </li>
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="#" class="font-[600]">Commercial Properties</a>
+                  </li>
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="#" class="font-[600]"
+                      >Search International Listings</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <!-- Listings -->
+            <li class="group font-[600] leading-[40px] relative cursor-pointer">
+              <div class="flex gap-2 align-middle justify-center items-center">
+                <span class="group-hover:text-blue-500">Listings</span>
+                <svg
+                  class="w-6 h-6 p-1 group-hover:text-blue-500 group-hover:rotate-180 transition duration-200 group-hover:duration-200"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </div>
+
+              <!-- Sub Menu -->
+              <div
+                class="hidden group-hover:block h-max absolute top-[90%] bg-white text-black p-0 -left-5 w-[250px] border border-gray-200"
+              >
+                <ul class="flex flex-col">
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="./listings.html" class="font-[600]"
+                      >All Listings</a
+                    >
+                  </li>
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="./solid-listings.html" class="font-[600]"
+                      >Solid Listings</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="font-[600] leading-[40px] cursor-pointer">
+              <a href="./OurAgent.html">Meet Our Agents</a>
+            </li>
+            <li class="font-[600] leading-[40px] cursor-pointer">
+              <a href="./testimonials.html">Testimonials</a>
+            </li>
+
+            <li class="font-[600] leading-[40px] cursor-pointer">
+              <a href="./contact.html">Contact Us</a>
+            </li>
+            <li class="font-[600] leading-[40px] cursor-pointer">
+              <a href="./login.html">LOGIN</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Header Menu Bar -->
+        <span class="text-black show_aside block md:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-12 p-2 h-12 text-white"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </span>
+      </div>
+
+      <!-- Hero -->
+      <div
+        class="hero relative h-[500px] bg-red top-0 bg-[url('./assets/images/group.jpg')] bg-blend-normal px-32"
+        style="height: 500px;"
+      >
+        <div
+          class="flex flex-col justify-center align-middle items-center md:items-start h-full gap-10 w-full px-10 md:px-0 max-w-full md:max-w-[800px] m-auto md:m-0"
+        >
+          <h2
+            class="text-white font-[600] text-[40px] md:text-[50px] sm:text-[60px] md:text-[70px] leading-none md:leading-[30px] capitalize text-center md:text-left"
+          >
+            Our Expert Team
+          </h2>
+        </div>
+      </div>
+    </header>
+
+    <!-- our agents by toyosi -->
+    <!-- grid cols -->
+    <section class="w-full pb-20">
+      <div
+        class="grid grid-cols-1 md:grid-cols-3 space-y-10 align-center items-center mx-auto"
+      >
+        <div class="items-center place-items-center text-center">
+          <div
+            class="flex justify-center flex-col w-full h-full place-items-center gap-10 pt-10"
+          >
+            <img
+              class="w-[70%] h-full brightness-50 hover:brightness-100 shadow-xl transition-all duration-200 hover:duration-200 ease-in-out hover:ease-in-out hover:transition-all"
+              src="./assets/images/jenny-wang.jpeg"
+              alt=""
+            />
+            <h1
+              class="font-[600] text-[24px] leading-[36px] text-[#1a1a1a]"
+              style="font-family: 'Barlow', sans-serif;"
+            >
+              Jenny Wang
+            </h1>
+            <span class="w-full">
+              <a href=""
+                ><i
+                  class="fa-solid fa-phone bg-slate-500 text-white p-2 rounded-full rotate-[270deg] hover:bg-orange-500 hover:transition-all duration-100 transition-all ease-in-out"
+                ></i
+              ></a>
+              <a href=""
+                ><i
+                  class="fa-regular fa-envelope bg-slate-500 text-white p-2 rounded-full hover:bg-orange-500 hover:transition-all duration-100 transition-all ease-in-out"
+                ></i
+              ></a>
+              <a href=""
+                ><i
+                  class="fa-solid fa-link bg-slate-500 text-white p-2 rounded-full hover:bg-orange-500 hover:transition-all duration-100 transition-all ease-in-out"
+                ></i
+              ></a>
+            </span>
+          </div>
+        </div>
+        <div class="items-center place-items-center text-center">
+          <div
+            class="flex justify-center flex-col w-full h-full place-items-center gap-10"
+          >
+            <img
+              class="w-[70%] h-full brightness-50 hover:brightness-100 shadow-xl transition-all duration-200 hover:duration-100 ease-in-out hover:ease-in-out hover:transition-all"
+              src="./assets/images/mario.jpeg"
+              alt=""
+            />
+            <h1
+              class="font-[600] text-[24px] leading-[36px] text-[#1a1a1a]"
+              style="font-family: 'Barlow', sans-serif;"
+            >
+              Mario Rodriquez
+            </h1>
+            <span class="w-full">
+              <a href=""
+                ><i
+                  class="fa-solid fa-phone bg-slate-500 text-white p-2 rounded-full rotate-[270deg] hover:bg-orange-500 hover:transition-all duration-100 transition-all ease-in-out"
+                ></i
+              ></a>
+              <a href=""
+                ><i
+                  class="fa-regular fa-envelope bg-slate-500 text-white p-2 rounded-full hover:bg-orange-500 hover:transition-all duration-100 transition-all ease-in-out"
+                ></i
+              ></a>
+              <a href=""
+                ><i
+                  class="fa-solid fa-link bg-slate-500 text-white p-2 rounded-full hover:bg-orange-500 hover:transition-all duration-100 transition-all ease-in-out"
+                ></i
+              ></a>
+            </span>
+          </div>
+        </div>
+        <div class="items-center place-items-center text-center">
+          <div
+            class="flex justify-center flex-col w-full h-full place-items-center gap-10"
+          >
+            <img
+              class="w-[70%] h-full brightness-50 hover:brightness-100 shadow-xl transition-all duration-200 hover:duration-100 ease-in-out hover:ease-in-out hover:transition-all"
+              src="./assets/images/elsa.jpeg"
+              alt=""
+            />
+            <h1
+              class="font-[600] text-[24px] leading-[36px] text-[#1a1a1a]"
+              style="font-family: 'Barlow', sans-serif;"
+            >
+              Elsa Matinez
+            </h1>
+            <span class="w-full">
+              <a href=""
+                ><i
+                  class="fa-solid fa-phone bg-slate-500 text-white p-2 rounded-full rotate-[270deg] hover:bg-orange-500 hover:transition-all duration-100 transition-all ease-in-out"
+                ></i
+              ></a>
+              <a href=""
+                ><i
+                  class="fa-regular fa-envelope bg-slate-500 text-white p-2 rounded-full hover:bg-orange-500 hover:transition-all duration-100 transition-all ease-in-out"
+                ></i
+              ></a>
+              <a href=""
+                ><i
+                  class="fa-solid fa-link bg-slate-500 text-white p-2 rounded-full hover:bg-orange-500 hover:transition-all duration-100 transition-all ease-in-out"
+                ></i
+              ></a>
+            </span>
+          </div>
+        </div>
+        <div class="items-center place-items-center text-center">
+          <div
+            class="flex justify-center flex-col w-full h-full place-items-center gap-10"
+          >
+            <img
+              class="w-[70%] h-full brightness-50 hover:brightness-100 shadow-xl transition-all duration-200 hover:duration-100 ease-in-out hover:ease-in-out hover:transition-all"
+              src="./assets/images/jessicaa.png"
+              alt=""
+            />
+            <h1
+              class="font-[600] text-[24px] leading-[36px] text-[#1a1a1a]"
+              style="font-family: 'Barlow', sans-serif;"
+            >
+              Jessica Smith
+            </h1>
+            <span class="w-full">
+              <a href=""
+                ><i
+                  class="fa-solid fa-phone bg-slate-500 text-white p-2 rounded-full rotate-[270deg] hover:bg-orange-500 hover:transition-all duration-100 transition-all ease-in-out"
+                ></i
+              ></a>
+              <a href=""
+                ><i
+                  class="fa-regular fa-envelope bg-slate-500 text-white p-2 rounded-full hover:bg-orange-500 hover:transition-all duration-100 transition-all ease-in-out"
+                ></i
+              ></a>
+              <a href=""
+                ><i
+                  class="fa-solid fa-link bg-slate-500 text-white p-2 rounded-full hover:bg-orange-500 hover:transition-all duration-100 transition-all ease-in-out"
+                ></i
+              ></a>
+            </span>
+          </div>
+        </div>
+        <div class="items-center place-items-center text-center">
+          <div
+            class="flex justify-center flex-col w-full h-full place-items-center gap-10"
+          >
+            <img
+              class="w-[70%] h-full brightness-50 hover:brightness-100 shadow-xl transition-all duration-200 hover:duration-100 ease-in-out hover:ease-in-out duration-100"
+              src="./assets/images/678890.jpeg"
+              alt=""
+            />
+            <h1
+              class="font-[600] text-[24px] leading-[36px] text-[#1a1a1a]"
+              style="font-family: 'Barlow', sans-serif;"
+            >
+              Margaret Cruz
+            </h1>
+            <span class="w-full">
+              <a href=""
+                ><i
+                  class="fa-solid fa-phone bg-slate-500 text-white p-2 rounded-full rotate-[270deg] hover:bg-orange-500 hover:transition-all duration-100 transition-all ease-in-out"
+                ></i
+              ></a>
+              <a href=""
+                ><i
+                  class="fa-regular fa-envelope bg-slate-500 text-white p-2 rounded-full hover:bg-orange-500 hover:transition-all duration-100 transition-all ease-in-out"
+                ></i
+              ></a>
+              <a href=""
+                ><i
+                  class="fa-solid fa-link bg-slate-500 text-white p-2 rounded-full hover:bg-orange-500 hover:transition-all duration-100 transition-all ease-in-out"
+                ></i
+              ></a>
+            </span>
+          </div>
+        </div>
+        <div class="items-center place-items-center text-center">
+          <div
+            class="flex justify-center flex-col w-full h-full place-items-center gap-10"
+          >
+            <img
+              class="w-[70%] h-full brightness-50 hover:brightness-100 shadow-xl transition-all duration-200 hover:duration-100 ease-in-out hover:transition-all"
+              src="https://jwangproperties.com/wp-content/uploads/2021/10/david.jpg"
+              alt=""
+            />
+            <h1
+              class="font-[600] text-[24px] leading-[36px] text-[#1a1a1a]"
+              style="font-family: 'Barlow', sans-serif;"
+            >
+              David Alvarado Listak
+            </h1>
+            <span class="w-full">
+              <a href=""
+                ><i
+                  class="fa-solid fa-phone bg-slate-500 text-white p-2 rounded-full rotate-[270deg] hover:bg-orange-500 hover:transition-all duration-100 transition-all ease-in-out"
+                ></i
+              ></a>
+              <a href=""
+                ><i
+                  class="fa-regular fa-envelope bg-slate-500 text-white p-2 rounded-full hover:bg-orange-500 hover:transition-all duration-100 transition-all ease-in-out"
+                ></i
+              ></a>
+              <a href=""
+                ><i
+                  class="fa-solid fa-link bg-slate-500 text-white p-2 rounded-full hover:bg-orange-500 hover:transition-all duration-100 transition-all ease-in-out"
+                ></i
+              ></a>
+            </span>
+          </div>
+        </div>
+        <div class="items-center place-items-center text-center">
+          <div
+            class="flex justify-center flex-col w-full h-full place-items-center gap-10"
+          >
+            <img
+              class="w-[70%] h-full brightness-50 hover:brightness-100 shadow-xl transition-all duration-200 hover:duration-100 ease-in-out hover:shadow-none hover:ease-in-out hover:transition-all"
+              src="./assets/images/allana.jpeg"
+              alt=""
+            />
+            <h1
+              class="font-[600] text-[24px] leading-[36px] text-[#1a1a1a]"
+              style="font-family: 'Barlow', sans-serif;"
+            >
+              Alanna Batilla
+            </h1>
+            <span class="w-full">
+              <a href=""
+                ><i
+                  class="fa-solid fa-phone bg-slate-500 text-white p-2 rounded-full rotate-[270deg] hover:bg-orange-500 hover:transition-all duration-100 transition-all ease-in-out"
+                ></i
+              ></a>
+              <a href=""
+                ><i
+                  class="fa-regular fa-envelope bg-slate-500 text-white p-2 rounded-full hover:bg-orange-500 hover:transition-all duration-100 transition-all ease-in-out"
+                ></i
+              ></a>
+              <a href=""
+                ><i
+                  class="fa-solid fa-link bg-slate-500 text-white p-2 rounded-full hover:bg-orange-500 hover:transition-all duration-100 transition-all ease-in-out"
+                ></i
+              ></a>
+            </span>
+          </div>
+        </div>
+        <div class="items-center place-items-center text-center">
+          <div
+            class="flex justify-center flex-col w-full h-full place-items-center gap-10"
+          >
+            <img
+              class="w-[70%] h-full brightness-50 hover:brightness-100 shadow-xl transition-all duration-200 hover:ease-in-out hover:transition-all"
+              src="https://jwangproperties.com/wp-content/uploads/2021/12/dalacia.jpg"
+              alt=""
+            />
+            <h1
+              class="font-[600] text-[24px] leading-[36px] text-[#1a1a1a]"
+              style="font-family: 'Barlow', sans-serif;"
+            >
+              Blanca Drogaris
+            </h1>
+            <span class="w-full">
+              <a href=""
+                ><i
+                  class="fa-solid fa-phone bg-slate-500 text-white p-2 rounded-full rotate-[270deg] hover:bg-orange-500 hover:transition-all duration-100 transition-all ease-in-out"
+                ></i
+              ></a>
+              <a href=""
+                ><i
+                  class="fa-regular fa-envelope bg-slate-500 text-white p-2 rounded-full hover:bg-orange-500 hover:transition-all duration-100 transition-all ease-in-out"
+                ></i
+              ></a>
+              <a href=""
+                ><i
+                  class="fa-solid fa-link bg-slate-500 text-white p-2 rounded-full hover:bg-orange-500 hover:transition-all duration-100 transition-all ease-in-out"
+                ></i
+              ></a>
+            </span>
+          </div>
+        </div>
+        <div class="items-center place-items-center text-center">
+          <div
+            class="flex justify-center flex-col w-full h-full place-items-center gap-10"
+          >
+            <img
+              class="w-[70%] h-full brightness-50 hover:brightness-100 shadow-xl transition-all duration-200 hover:ease-in-out hover:transition-all"
+              src="./assets/images/737736.jpeg"
+              alt=""
+            />
+            <h1
+              class="font-[600] text-[24px] leading-[36px] text-[#1a1a1a]"
+              style="font-family: 'Barlow', sans-serif;"
+            >
+              Marilyn Flores
+            </h1>
+            <span class="w-full">
+              <a href=""
+                ><i
+                  class="fa-solid fa-phone bg-slate-500 text-white p-2 rounded-full rotate-[270deg] hover:bg-orange-500 hover:transition-all duration-100 transition-all ease-in-out"
+                ></i
+              ></a>
+              <a href=""
+                ><i
+                  class="fa-regular fa-envelope bg-slate-500 text-white p-2 rounded-full hover:bg-orange-500 hover:transition-all duration-100 transition-all ease-in-out"
+                ></i
+              ></a>
+              <a href=""
+                ><i
+                  class="fa-solid fa-link bg-slate-500 text-white p-2 rounded-full hover:bg-orange-500 hover:transition-all duration-100 transition-all ease-in-out"
+                ></i
+              ></a>
+            </span>
+          </div>
+        </div>
+        <div class="items-center place-items-center text-center">
+          <div
+            class="flex justify-center flex-col w-full h-full place-items-center gap-10"
+          >
+            <img
+              class="w-[70%] h-full brightness-50 hover:brightness-100 shadow-xl transition-all duration-200 hover:ease-in-out hover:transition-all"
+              src="./assets/images/aracelis.jpeg"
+              alt=""
+            />
+            <h1
+              class="font-[600] text-[24px] leading-[36px] text-[#1a1a1a]"
+              style="font-family: 'Barlow', sans-serif;"
+            >
+              Arecelis Theoc
+            </h1>
+            <span class="w-full">
+              <a href=""
+                ><i
+                  class="fa-solid fa-phone bg-slate-500 text-white p-2 rounded-full rotate-[270deg] hover:bg-orange-500 hover:transition-all duration-100 transition-all ease-in-out"
+                ></i
+              ></a>
+              <a href=""
+                ><i
+                  class="fa-regular fa-envelope bg-slate-500 text-white p-2 rounded-full hover:bg-orange-500 hover:transition-all duration-100 transition-all ease-in-out"
+                ></i
+              ></a>
+              <a href=""
+                ><i
+                  class="fa-solid fa-link bg-slate-500 text-white p-2 rounded-full hover:bg-orange-500 hover:transition-all duration-100 transition-all ease-in-out"
+                ></i
+              ></a>
+            </span>
+          </div>
+        </div>
+        <div class="items-center place-items-center text-center">
+          <div
+            class="flex justify-center flex-col w-full h-full place-items-center gap-10"
+          >
+            <img
+              class="w-[70%] h-full brightness-50 hover:brightness-100 shadow-xl transition-all duration-200 hover:ease-in-out hover:transition-all"
+              src="./assets/images/767321.jpeg"
+              alt=""
+            />
+            <h1
+              class="font-[600] text-[24px] leading-[36px] text-[#1a1a1a]"
+              style="font-family: 'Barlow', sans-serif;"
+            >
+              Sandra Bocanegra
+            </h1>
+            <span class="w-full">
+              <a href=""
+                ><i
+                  class="fa-solid fa-phone bg-slate-500 text-white p-2 rounded-full rotate-[270deg] hover:bg-orange-500 hover:transition-all duration-100 transition-all ease-in-out"
+                ></i
+              ></a>
+              <a href=""
+                ><i
+                  class="fa-regular fa-envelope bg-slate-500 text-white p-2 rounded-full hover:bg-orange-500 hover:transition-all duration-100 transition-all ease-in-out"
+                ></i
+              ></a>
+              <a href=""
+                ><i
+                  class="fa-solid fa-link bg-slate-500 text-white p-2 rounded-full hover:bg-orange-500 hover:transition-all duration-100 transition-all ease-in-out"
+                ></i
+              ></a>
+            </span>
+          </div>
+        </div>
+        <div class="items-center place-items-center text-center">
+          <div
+            class="flex justify-center flex-col w-full h-full place-items-center gap-10"
+          >
+            <img
+              class="w-[70%] h-full brightness-50 hover:brightness-100 shadow-xl transition-all duration-200 hover:ease-in-out hover:transition-all"
+              src="https://jwangproperties.com/wp-content/uploads/elementor/thumbs/cheng-pv1sw1189zzoexe473jqe7aqejq03h2jni5ejkt2u8.jpeg"
+              alt=""
+            />
+            <h1
+              class="font-[600] text-[24px] leading-[36px] text-[#1a1a1a]"
+              style="font-family: 'Barlow', sans-serif;"
+            >
+              Cheng-En Lee
+            </h1>
+            <span class="w-full">
+              <a href=""
+                ><i
+                  class="fa-solid fa-phone bg-slate-500 text-white p-2 rounded-full rotate-[270deg] hover:bg-orange-500 hover:transition-all duration-100 transition-all ease-in-out"
+                ></i
+              ></a>
+              <a href=""
+                ><i
+                  class="fa-regular fa-envelope bg-slate-500 text-white p-2 rounded-full hover:bg-orange-500 hover:transition-all duration-100 transition-all ease-in-out"
+                ></i
+              ></a>
+              <a href=""
+                ><i
+                  class="fa-solid fa-link bg-slate-500 text-white p-2 rounded-full hover:bg-orange-500 hover:transition-all duration-100 transition-all ease-in-out"
+                ></i
+              ></a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer by Fortune-->
+    <footer class="bg-[#19212d]">
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 items-center p-10 border-b border-b-black justify-center"
+      >
+        <div class="space-y-5 px-0 mb-10">
+          <div class="w-full">
+            <img
+              class="w-[100px] rounded-full mx-[40px]"
+              src="./assets/images/logo-small-200.jpg"
+              alt=""
+            />
+          </div>
+
+          <p class="max-w-sm text-slate-200 px-0 mb-5 md:px-10 md:mb-0">
+            We offer one stop customized Strategies and Services Plans tailored
+            to each client's individual needs in both residential and commercial
+            real estate
+          </p>
+
+          <!-- Social Icons -->
+          <div
+            class="flex items-center md:justify-center text-white text-[25px] relative flex-row gap-3 pb-5"
+          >
+            <a href="">
+              <i
+                class="fab fa-facebook bg-red-700 p-2 rounded-full hover: bg-white hover:text-blue-500"
+                aria-hidden="true"
+              ></i>
+            </a>
+            <a href="">
+              <i
+                class="fab fa-twitter-square bg-red-500 p-2 rounded-full hover: bg-white hover:text-blue-500"
+                aria-hidden="true"
+              ></i>
+            </a>
+            <a href="">
+              <i
+                class="fab fa-youtube bg-red-500 p-2 rounded-full hover: bg-white hover:text-blue-500"
+                aria-hidden="true"
+              ></i>
+            </a>
+            <a href="">
+              <i
+                class="fab fa-instagram bg-red-500 p-2 rounded-full hover: bg-white hover:text-blue-500"
+                aria-hidden="true"
+              ></i>
+            </a>
+          </div>
+        </div>
+        <div
+          class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 col-span-3"
+        >
+          <div class="space-y-3 text-white">
+            <div>
+              <h1 class="text-xl font-medium">Our Company</h1>
+            </div>
+
+            <div class="text-slate-200">
+              <a href="./about.html"><p>About Company</p></a>
+              <a href="./contact.html"><p>Contact</p></a>
+              <a href="./policy.html"><p>Privacy Policy</p></a>
+              <p>Terms and Conditions</p>
+            </div>
+          </div>
+          <div class="space-y-3 text-white">
+            <div>
+              <h1 class="font-medium text-xl">Our Services</h1>
+            </div>
+
+            <div class="text-slate-200">
+              <p>News</p>
+              <p>Video Production</p>
+              <p>Home Finding</p>
+              <p>Search Schools</p>
+            </div>
+          </div>
+          <div class="space-y-5 text-white">
+            <div>
+              <h1 class="font-lg text-lg">Contact details</h1>
+            </div>
+            <div class="text-slate-200">
+              <p>2925 Richmond Ave, Ste 1200</p>
+              <p>Houston, Tx 77098</p>
+              <p>(281)451-0185</p>
+              <p>jennywangrealestate@gmail.com</p>
+            </div>
+          </div>
+
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 gap-5 md:block md:flex-row"
+          >
+            <div class="text-white text-sm">
+              <p>Texas Real Estate Commission Consumer</p>
+              <p>Protection Notice</p>
+            </div>
+
+            <div class="text-white text-sm">
+              <p>Texas Real Estate Commission Consumer</p>
+              <p>Protection Notice</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="flex flex-col md:flex-row justify-between items-center p-4 lg:p-[30px] align-center px-10 md:px-[90px] text-xs"
+      >
+        <p class="text-slate-200 align-center">
+          Copyright &copy; 2022 JWang Properties
+        </p>
+        <p class="text-slate-200 align-center">Powered by jwang Properties</p>
+      </div>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Team-jwang properties</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./assets/css/style.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="/dist/output.css" rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css"
+    />
+
+    <script src="https://unpkg.com/@glidejs/glide@3.6.0/dist/glide.js"></script>
+
+    <style>
+      .carousel__elemento {
+        width: 350px !important;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Header-->
+    <header class="relative">
+      <div
+        class="main_header absolute z-50 top-0 right-0 left-0 w-full bg-transparent border-b text-white font-semibold border-b-gray-50 flex justify-between align-middle items-center p-5 px-10 sm:px-20 md:px-32"
+      >
+        <a class="text-xl font-semibold" href="./index.html">
+          <img
+            class="w-[90px] h-[90px] object-contain mx-auto"
+            src="./assets/images/real-logo.png"
+            alt="Logo"
+          />
+        </a>
+
+        <nav class="hidden md:block">
+          <ul>
+            <li class="font-[600] leading-[40px] cursor-pointer">
+              <a href="./index.html">Home</a>
+            </li>
+
+            <!-- About -->
+            <li class="group font-[600] leading-[40px] relative cursor-pointer">
+              <div class="flex gap-2 align-middle justify-center items-center">
+                <span class="group-hover:text-blue-500">About</span>
+                <svg
+                  class="w-6 h-6 p-1 group-hover:text-blue-500 group-hover:rotate-180 transition duration-200 group-hover:duration-200"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </div>
+
+              <!-- Sub Menu -->
+              <div
+                class="hidden group-hover:block h-max absolute top-[90%] bg-white text-black p-0 -left-5 w-[250px] border border-gray-200"
+              >
+                <ul class="flex flex-col">
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="./about.html" class="font-[600]"
+                      >About Jwang Properties</a
+                    >
+                  </li>
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="./story.html" class="font-[600]">My Story</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <!-- Search -->
+            <li class="group font-[600] leading-[40px] relative cursor-pointer">
+              <div class="flex gap-2 align-middle justify-center items-center">
+                <span class="group-hover:text-blue-500">Search</span>
+                <svg
+                  class="w-6 h-6 p-1 group-hover:text-blue-500 group-hover:rotate-180 transition duration-200 group-hover:duration-200"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </div>
+
+              <!-- Sub Menu -->
+              <div
+                class="hidden group-hover:block h-max absolute top-[90%] bg-white text-black p-0 -left-5 w-[250px] border border-gray-200"
+              >
+                <ul class="flex flex-col">
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="#" class="font-[600]">Search For Homes</a>
+                  </li>
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="#" class="font-[600]">Search With Maps</a>
+                  </li>
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="#" class="font-[600]">Search Neigbours</a>
+                  </li>
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="#" class="font-[600]">Search Schools</a>
+                  </li>
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="#" class="font-[600]">Commercial Properties</a>
+                  </li>
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="#" class="font-[600]"
+                      >Search International Listings</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <!-- Listings -->
+            <li class="group font-[600] leading-[40px] relative cursor-pointer">
+              <div class="flex gap-2 align-middle justify-center items-center">
+                <span class="group-hover:text-blue-500">Listings</span>
+                <svg
+                  class="w-6 h-6 p-1 group-hover:text-blue-500 group-hover:rotate-180 transition duration-200 group-hover:duration-200"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </div>
+
+              <!-- Sub Menu -->
+              <div
+                class="hidden group-hover:block h-max absolute top-[90%] bg-white text-black p-0 -left-5 w-[250px] border border-gray-200"
+              >
+                <ul class="flex flex-col">
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="./listings.html" class="font-[600]"
+                      >All Listings</a
+                    >
+                  </li>
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="./solid-listings.html" class="font-[600]"
+                      >Solid Listings</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="font-[600] leading-[40px] cursor-pointer">
+              <a href="./OurAgent.html">Meet Our Agents</a>
+            </li>
+            <li class="font-[600] leading-[40px] cursor-pointer">
+              <a href="./testimonials.html">Testimonials</a>
+            </li>
+
+            <li class="font-[600] leading-[40px] cursor-pointer">
+              <a href="./contact.html">Contact Us</a>
+            </li>
+            <li class="font-[600] leading-[40px] cursor-pointer">
+              <a href="./login.html">LOGIN</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Header Menu Bar -->
+        <span class="text-black show_aside block md:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-12 p-2 h-12 text-white"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </span>
+      </div>
+
+      <!-- Hero -->
+      <div
+        class="hero relative h-[500px] bg-red top-0 bg-[url('./assets/images/testi-3.jpeg')] bg-blend-normal px-32"
+        style="height: 500px;"
+      >
+        <div
+          class="flex flex-col justify-center align-middle items-center md:items-start h-full gap-10 w-full px-10 md:px-0 max-w-full md:max-w-[800px] m-auto md:m-0"
+        >
+          <h2
+            class="text-white font-[600] text-[40px] md:text-[50px] sm:text-[60px] md:text-[70px] leading-none md:leading-[30px] capitalize text-center md:text-left"
+          >
+            Our Listings
+          </h2>
+        </div>
+      </div>
+    </header>
+
+    <!-- New Listings-->
+    <section class="px-5 md:px-10 py-16 md:py-30 px-32">
+      <span
+        class="text-3xl font-semibold"
+        style="font-family: 'Barlow', sans-serif;"
+        >New Listings</span
+      >
+      <div class="relative w-[100px] bg-red-500 p-1 mt-5"></div>
+
+      <div class="carousel">
+        <div class="carousel__contenedor relative">
+          <button
+            aria-label="Anterior"
+            class="carousel__anterior absolute top-[50%] -left-[10px] bg-gray-600 text-white rounded-full p-5 z-10 flex justify-center align-middle items-center"
+            style="width: 50px; height: 50px;"
+          >
+            <i class="fas fa-chevron-left"></i>
+          </button>
+
+          <div class="carousel__lista p-5 py-10">
+            <!-- Card -->
+            <div
+              class="carousel__elemento mx-5 border border-gray-100 rounded p-3 w-full hover:border-gray-300 transition transition-all hover:duration-200 duration-200 shadow-lg hover:shadow-xl"
+            >
+              <img
+                src="./assets/images/listings/1.jpg"
+                alt="Listings image 1"
+              />
+
+              <div class="flex flex-col gap-5">
+                <h2
+                  class="text-xl font-semibold leading-10"
+                  style="font-family: 'Inter', sans-serif;"
+                >
+                  Some title here
+                </h2>
+
+                <p class="text-ellise overflow-hiddden truncate w-full">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Beatae totam amet saepe voluptatem! Dolores nesciunt impedit
+                  laboriosam, aliquam officiis tenetur voluptatibus enim
+                  repellat sunt numquam facere ullam temporibus, eos saepe.
+                </p>
+
+                <span class="flex flex-col">
+                  <del class="text-gray-400 text-sm">₦ 30,000</del>
+
+                  <span
+                    class="text-lg font-normal text-xl"
+                    style="font-family: 'Poppins', sans-serif;"
+                    >₦ 25,000</span
+                  >
+                </span>
+
+                <!-- See all button -->
+                <a
+                  href="#"
+                  class="text-sm px-5 py-3 text-white bg-blue-800 duration-200 w-max hover:bg-blue-600 transition-all"
+                  >View Details</a
+                >
+              </div>
+            </div>
+
+            <!-- Card -->
+            <div
+              class="carousel__elemento mx-5 border border-gray-100 rounded p-3 w-full hover:border-gray-300 transition transition-all hover:duration-200 duration-200 shadow-lg hover:shadow-xl"
+            >
+              <img
+                src="./assets/images/listings/1.jpg"
+                alt="Listings image 1"
+              />
+
+              <div class="flex flex-col gap-5">
+                <h2
+                  class="text-xl font-semibold leading-10"
+                  style="font-family: 'Inter', sans-serif;"
+                >
+                  Some title here
+                </h2>
+
+                <p class="text-ellise overflow-hiddden truncate w-full">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Beatae totam amet saepe voluptatem! Dolores nesciunt impedit
+                  laboriosam, aliquam officiis tenetur voluptatibus enim
+                  repellat sunt numquam facere ullam temporibus, eos saepe.
+                </p>
+
+                <span class="flex flex-col">
+                  <del class="text-gray-400 text-sm">₦ 30,000</del>
+
+                  <span
+                    class="text-lg font-normal text-xl"
+                    style="font-family: 'Poppins', sans-serif;"
+                    >₦ 25,000</span
+                  >
+                </span>
+
+                <!-- See all button -->
+                <a
+                  href="#"
+                  class="text-sm px-5 py-3 text-white bg-blue-800 duration-200 w-max hover:bg-blue-600 transition-all"
+                  >View Details</a
+                >
+              </div>
+            </div>
+
+            <!-- Card -->
+            <div
+              class="carousel__elemento mx-5 border border-gray-100 rounded p-3 w-full hover:border-gray-300 transition transition-all hover:duration-200 duration-200 shadow-lg hover:shadow-xl"
+            >
+              <img
+                src="./assets/images/listings/1.jpg"
+                alt="Listings image 1"
+              />
+
+              <div class="flex flex-col gap-5">
+                <h2
+                  class="text-xl font-semibold leading-10"
+                  style="font-family: 'Inter', sans-serif;"
+                >
+                  Some title here
+                </h2>
+
+                <p class="text-ellise overflow-hiddden truncate w-full">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Beatae totam amet saepe voluptatem! Dolores nesciunt impedit
+                  laboriosam, aliquam officiis tenetur voluptatibus enim
+                  repellat sunt numquam facere ullam temporibus, eos saepe.
+                </p>
+
+                <span class="flex flex-col">
+                  <del class="text-gray-400 text-sm">₦ 30,000</del>
+
+                  <span
+                    class="text-lg font-normal text-xl"
+                    style="font-family: 'Poppins', sans-serif;"
+                    >₦ 25,000</span
+                  >
+                </span>
+
+                <!-- See all button -->
+                <a
+                  href="#"
+                  class="text-sm px-5 py-3 text-white bg-blue-800 duration-200 w-max hover:bg-blue-600 transition-all"
+                  >View Details</a
+                >
+              </div>
+            </div>
+
+            <!-- Card -->
+            <div
+              class="carousel__elemento mx-5 border border-gray-100 rounded p-3 w-full hover:border-gray-300 transition transition-all hover:duration-200 duration-200 shadow-lg hover:shadow-xl"
+            >
+              <img
+                src="./assets/images/listings/1.jpg"
+                alt="Listings image 1"
+              />
+
+              <div class="flex flex-col gap-5">
+                <h2
+                  class="text-xl font-semibold leading-10"
+                  style="font-family: 'Inter', sans-serif;"
+                >
+                  Some title here
+                </h2>
+
+                <p class="text-ellise overflow-hiddden truncate w-full">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Beatae totam amet saepe voluptatem! Dolores nesciunt impedit
+                  laboriosam, aliquam officiis tenetur voluptatibus enim
+                  repellat sunt numquam facere ullam temporibus, eos saepe.
+                </p>
+
+                <span class="flex flex-col">
+                  <del class="text-gray-400 text-sm">₦ 30,000</del>
+
+                  <span
+                    class="text-lg font-normal text-xl"
+                    style="font-family: 'Poppins', sans-serif;"
+                    >₦ 25,000</span
+                  >
+                </span>
+
+                <!-- See all button -->
+                <a
+                  href="#"
+                  class="text-sm px-5 py-3 text-white bg-blue-800 duration-200 w-max hover:bg-blue-600 transition-all"
+                  >View Details</a
+                >
+              </div>
+            </div>
+
+            <!-- Card -->
+            <div
+              class="carousel__elemento mx-5 border border-gray-100 rounded p-3 w-full hover:border-gray-300 transition transition-all hover:duration-200 duration-200 shadow-lg hover:shadow-xl"
+            >
+              <img
+                src="./assets/images/listings/1.jpg"
+                alt="Listings image 1"
+              />
+
+              <div class="flex flex-col gap-5">
+                <h2
+                  class="text-xl font-semibold leading-10"
+                  style="font-family: 'Inter', sans-serif;"
+                >
+                  Some title here
+                </h2>
+
+                <p class="text-ellise overflow-hiddden truncate w-full">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Beatae totam amet saepe voluptatem! Dolores nesciunt impedit
+                  laboriosam, aliquam officiis tenetur voluptatibus enim
+                  repellat sunt numquam facere ullam temporibus, eos saepe.
+                </p>
+
+                <span class="flex flex-col">
+                  <del class="text-gray-400 text-sm">₦ 30,000</del>
+
+                  <span
+                    class="text-lg font-normal text-xl"
+                    style="font-family: 'Poppins', sans-serif;"
+                    >₦ 25,000</span
+                  >
+                </span>
+
+                <!-- See all button -->
+                <a
+                  href="#"
+                  class="text-sm px-5 py-3 text-white bg-blue-800 duration-200 w-max hover:bg-blue-600 transition-all"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <button
+            aria-label="Siguiente"
+            class="carousel__siguiente absolute top-[50%] -right-[10px] bg-gray-600 text-white rounded-full p-5 z-10 flex align-middle items-center"
+            style="width: 50px; height: 50px;"
+          >
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+
+        <div role="tablist" class="carousel__indicadores"></div>
+      </div>
+    </section>
+
+    <!-- Popular Listings-->
+    <section class="px-5 md:px-10 py-16 md:py-30 px-32">
+      <span
+        class="text-3xl font-semibold"
+        style="font-family: 'Barlow', sans-serif;"
+        >Top Listings</span
+      >
+      <div class="relative w-[100px] bg-red-500 p-1 mt-5"></div>
+
+      <div class="carousel">
+        <div class="carousel__contenedor relative">
+          <button
+            aria-label="Anterior"
+            class="carousel__anterior absolute top-[50%] -left-[10px] bg-gray-600 text-white rounded-full p-5 z-100 flex justify-center align-middle items-center"
+            style="z-index: 999; width: 50px; height: 50px;"
+          >
+            <i class="fas fa-chevron-left"></i>
+          </button>
+
+          <div class="carousel__lista p-5 py-10">
+            <!-- Card -->
+            <div
+              class="carousel__elemento mx-5 border border-gray-100 rounded p-3 w-full hover:border-gray-300 transition transition-all hover:duration-200 duration-200 shadow-lg hover:shadow-xl"
+            >
+              <img
+                src="./assets/images/listings/1.jpg"
+                alt="Listings image 1"
+              />
+
+              <div class="flex flex-col gap-5">
+                <h2
+                  class="text-xl font-semibold leading-10"
+                  style="font-family: 'Inter', sans-serif;"
+                >
+                  Some title here
+                </h2>
+
+                <p class="text-ellise overflow-hiddden truncate w-full">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Beatae totam amet saepe voluptatem! Dolores nesciunt impedit
+                  laboriosam, aliquam officiis tenetur voluptatibus enim
+                  repellat sunt numquam facere ullam temporibus, eos saepe.
+                </p>
+
+                <span class="flex flex-col">
+                  <del class="text-gray-400 text-sm">₦ 30,000</del>
+
+                  <span
+                    class="text-lg font-normal text-xl"
+                    style="font-family: 'Poppins', sans-serif;"
+                    >₦ 25,000</span
+                  >
+                </span>
+
+                <!-- See all button -->
+                <a
+                  href="#"
+                  class="text-sm px-5 py-3 text-white bg-blue-800 duration-200 w-max hover:bg-blue-600 transition-all"
+                  >View Details</a
+                >
+              </div>
+            </div>
+
+            <!-- Card -->
+            <div
+              class="carousel__elemento mx-5 border border-gray-100 rounded p-3 w-full hover:border-gray-300 transition transition-all hover:duration-200 duration-200 shadow-lg hover:shadow-xl"
+            >
+              <img
+                src="./assets/images/listings/1.jpg"
+                alt="Listings image 1"
+              />
+
+              <div class="flex flex-col gap-5">
+                <h2
+                  class="text-xl font-semibold leading-10"
+                  style="font-family: 'Inter', sans-serif;"
+                >
+                  Some title here
+                </h2>
+
+                <p class="text-ellise overflow-hiddden truncate w-full">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Beatae totam amet saepe voluptatem! Dolores nesciunt impedit
+                  laboriosam, aliquam officiis tenetur voluptatibus enim
+                  repellat sunt numquam facere ullam temporibus, eos saepe.
+                </p>
+
+                <span class="flex flex-col">
+                  <del class="text-gray-400 text-sm">₦ 30,000</del>
+
+                  <span
+                    class="text-lg font-normal text-xl"
+                    style="font-family: 'Poppins', sans-serif;"
+                    >₦ 25,000</span
+                  >
+                </span>
+
+                <!-- See all button -->
+                <a
+                  href="#"
+                  class="text-sm px-5 py-3 text-white bg-blue-800 duration-200 w-max hover:bg-blue-600 transition-all"
+                  >View Details</a
+                >
+              </div>
+            </div>
+
+            <!-- Card -->
+            <div
+              class="carousel__elemento mx-5 border border-gray-100 rounded p-3 w-full hover:border-gray-300 transition transition-all hover:duration-200 duration-200 shadow-lg hover:shadow-xl"
+            >
+              <img
+                src="./assets/images/listings/1.jpg"
+                alt="Listings image 1"
+              />
+
+              <div class="flex flex-col gap-5">
+                <h2
+                  class="text-xl font-semibold leading-10"
+                  style="font-family: 'Inter', sans-serif;"
+                >
+                  Some title here
+                </h2>
+
+                <p class="text-ellise overflow-hiddden truncate w-full">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Beatae totam amet saepe voluptatem! Dolores nesciunt impedit
+                  laboriosam, aliquam officiis tenetur voluptatibus enim
+                  repellat sunt numquam facere ullam temporibus, eos saepe.
+                </p>
+
+                <span class="flex flex-col">
+                  <del class="text-gray-400 text-sm">₦ 30,000</del>
+
+                  <span
+                    class="text-lg font-normal text-xl"
+                    style="font-family: 'Poppins', sans-serif;"
+                    >₦ 25,000</span
+                  >
+                </span>
+
+                <!-- See all button -->
+                <a
+                  href="#"
+                  class="text-sm px-5 py-3 text-white bg-blue-800 duration-200 w-max hover:bg-blue-600 transition-all"
+                  >View Details</a
+                >
+              </div>
+            </div>
+
+            <!-- Card -->
+            <div
+              class="carousel__elemento mx-5 border border-gray-100 rounded p-3 w-full hover:border-gray-300 transition transition-all hover:duration-200 duration-200 shadow-lg hover:shadow-xl"
+            >
+              <img
+                src="./assets/images/listings/1.jpg"
+                alt="Listings image 1"
+              />
+
+              <div class="flex flex-col gap-5">
+                <h2
+                  class="text-xl font-semibold leading-10"
+                  style="font-family: 'Inter', sans-serif;"
+                >
+                  Some title here
+                </h2>
+
+                <p class="text-ellise overflow-hiddden truncate w-full">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Beatae totam amet saepe voluptatem! Dolores nesciunt impedit
+                  laboriosam, aliquam officiis tenetur voluptatibus enim
+                  repellat sunt numquam facere ullam temporibus, eos saepe.
+                </p>
+
+                <span class="flex flex-col">
+                  <del class="text-gray-400 text-sm">₦ 30,000</del>
+
+                  <span
+                    class="text-lg font-normal text-xl"
+                    style="font-family: 'Poppins', sans-serif;"
+                    >₦ 25,000</span
+                  >
+                </span>
+
+                <!-- See all button -->
+                <a
+                  href="#"
+                  class="text-sm px-5 py-3 text-white bg-blue-800 duration-200 w-max hover:bg-blue-600 transition-all"
+                  >View Details</a
+                >
+              </div>
+            </div>
+
+            <!-- Card -->
+            <div
+              class="carousel__elemento mx-5 border border-gray-100 rounded p-3 w-full hover:border-gray-300 transition transition-all hover:duration-200 duration-200 shadow-lg hover:shadow-xl"
+            >
+              <img
+                src="./assets/images/listings/1.jpg"
+                alt="Listings image 1"
+              />
+
+              <div class="flex flex-col gap-5">
+                <h2
+                  class="text-xl font-semibold leading-10"
+                  style="font-family: 'Inter', sans-serif;"
+                >
+                  Some title here
+                </h2>
+
+                <p class="text-ellise overflow-hiddden truncate w-full">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Beatae totam amet saepe voluptatem! Dolores nesciunt impedit
+                  laboriosam, aliquam officiis tenetur voluptatibus enim
+                  repellat sunt numquam facere ullam temporibus, eos saepe.
+                </p>
+
+                <span class="flex flex-col">
+                  <del class="text-gray-400 text-sm">₦ 30,000</del>
+
+                  <span
+                    class="text-lg font-normal text-xl"
+                    style="font-family: 'Poppins', sans-serif;"
+                    >₦ 25,000</span
+                  >
+                </span>
+
+                <!-- See all button -->
+                <a
+                  href="#"
+                  class="text-sm px-5 py-3 text-white bg-blue-800 duration-200 w-max hover:bg-blue-600 transition-all"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <button
+            aria-label="Siguiente"
+            class="carousel__siguiente absolute top-[50%] -right-[10px] bg-gray-600 text-white rounded-full p-5 z-100 flex align-middle items-center"
+            style="width: 50px; height: 50px;"
+          >
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+
+        <div role="tablist" class="carousel__indicadores"></div>
+      </div>
+
+      <a
+        href="./solid-listings.html"
+        class="block relative w-max bg-red-700 transition-all duration-200 hover:duration-200 hover:bg-red-600 py-4 text-sm px-8 rounded text-white"
+        style="font-family: 'Poppins', sans-serif;"
+        >Solid Listings</a
+      >
+    </section>
+
+    <!--Footer by Fortune-->
+    <footer class="bg-[#19212d]">
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 items-center p-10 border-b border-b-black justify-center"
+      >
+        <div class="space-y-5 px-0 mb-10">
+          <div class="w-full">
+            <img
+              class="w-[100px] rounded-full mx-[40px]"
+              src="./assets/images/logo-small-200.jpg"
+              alt=""
+            />
+          </div>
+
+          <p class="max-w-sm text-slate-200 px-0 mb-5 md:px-10 md:mb-0">
+            We offer one stop customized Strategies and Services Plans tailored
+            to each client's individual needs in both residential and commercial
+            real estate
+          </p>
+
+          <!-- Social Icons -->
+          <div
+            class="flex items-center md:justify-center text-white text-[25px] relative flex-row gap-3 pb-5"
+          >
+            <a href="">
+              <i
+                class="fab fa-facebook bg-red-700 p-2 rounded-full hover: bg-white hover:text-blue-500"
+                aria-hidden="true"
+              ></i>
+            </a>
+            <a href="">
+              <i
+                class="fab fa-twitter-square bg-red-500 p-2 rounded-full hover: bg-white hover:text-blue-500"
+                aria-hidden="true"
+              ></i>
+            </a>
+            <a href="">
+              <i
+                class="fab fa-youtube bg-red-500 p-2 rounded-full hover: bg-white hover:text-blue-500"
+                aria-hidden="true"
+              ></i>
+            </a>
+            <a href="">
+              <i
+                class="fab fa-instagram bg-red-500 p-2 rounded-full hover: bg-white hover:text-blue-500"
+                aria-hidden="true"
+              ></i>
+            </a>
+          </div>
+        </div>
+        <div
+          class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 col-span-3"
+        >
+          <div class="space-y-3 text-white">
+            <div>
+              <h1 class="text-xl font-medium">Our Company</h1>
+            </div>
+
+            <div class="text-slate-200">
+              <a href="./about.html"><p>About Company</p></a>
+              <a href="./contact.html"><p>Contact</p></a>
+              <a href="./policy.html"><p>Privacy Policy</p></a>
+              <p>Terms and Conditions</p>
+            </div>
+          </div>
+          <div class="space-y-3 text-white">
+            <div>
+              <h1 class="font-medium text-xl">Our Services</h1>
+            </div>
+
+            <div class="text-slate-200">
+              <p>News</p>
+              <p>Video Production</p>
+              <p>Home Finding</p>
+              <p>Search Schools</p>
+            </div>
+          </div>
+          <div class="space-y-5 text-white">
+            <div>
+              <h1 class="font-lg text-lg">Contact details</h1>
+            </div>
+            <div class="text-slate-200">
+              <p>2925 Richmond Ave, Ste 1200</p>
+              <p>Houston, Tx 77098</p>
+              <p>(281)451-0185</p>
+              <p>jennywangrealestate@gmail.com</p>
+            </div>
+          </div>
+
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 gap-5 md:block md:flex-row"
+          >
+            <div class="text-white text-sm">
+              <p>Texas Real Estate Commission Consumer</p>
+              <p>Protection Notice</p>
+            </div>
+
+            <div class="text-white text-sm">
+              <p>Texas Real Estate Commission Consumer</p>
+              <p>Protection Notice</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="flex flex-col md:flex-row justify-between items-center p-4 lg:p-[30px] align-center px-10 md:px-[90px] text-xs"
+      >
+        <p class="text-slate-200 align-center">
+          Copyright &copy; 2022 JWang Properties
+        </p>
+        <p class="text-slate-200 align-center">Powered by jwang Properties</p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/2c36e9b7b1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

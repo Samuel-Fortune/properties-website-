@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Private Policy</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./assets/css/style.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="/dist/output.css" rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="relative">
+      <div
+        class="main_header absolute z-50 top-0 right-0 left-0 w-full bg-transparent border-b text-white font-semibold border-b-gray-50 flex justify-between align-middle items-center p-5 px-10 sm:px-20 md:px-32"
+      >
+        <a class="text-xl font-semibold" href="./index.html">
+          <img
+            class="w-[90px] h-[90px] object-contain mx-auto"
+            src="./assets/images/real-logo.png"
+            alt="Logo"
+          />
+        </a>
+
+        <nav class="hidden md:block">
+          <ul>
+            <li class="font-[600] leading-[40px] cursor-pointer">
+              <a href="./index.html">Home</a>
+            </li>
+
+            <!-- About -->
+            <li class="group font-[600] leading-[40px] relative cursor-pointer">
+              <div class="flex gap-2 align-middle justify-center items-center">
+                <span class="group-hover:text-blue-500">About</span>
+                <svg
+                  class="w-6 h-6 p-1 group-hover:text-blue-500 group-hover:rotate-180 transition duration-200 group-hover:duration-200"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </div>
+
+              <!-- Sub Menu -->
+              <div
+                class="hidden group-hover:block h-max absolute top-[90%] bg-white text-black p-0 -left-5 w-[250px] border border-gray-200"
+              >
+                <ul class="flex flex-col">
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="./about.html" class="font-[600]"
+                      >About Jwang Properties</a
+                    >
+                  </li>
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="./story.html" class="font-[600]">My Story</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <!-- Search -->
+            <li class="group font-[600] leading-[40px] relative cursor-pointer">
+              <div class="flex gap-2 align-middle justify-center items-center">
+                <span class="group-hover:text-blue-500">Search</span>
+                <svg
+                  class="w-6 h-6 p-1 group-hover:text-blue-500 group-hover:rotate-180 transition duration-200 group-hover:duration-200"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </div>
+
+              <!-- Sub Menu -->
+              <div
+                class="hidden group-hover:block h-max absolute top-[90%] bg-white text-black p-0 -left-5 w-[250px] border border-gray-200"
+              >
+                <ul class="flex flex-col">
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="#" class="font-[600]">Search For Homes</a>
+                  </li>
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="#" class="font-[600]">Search With Maps</a>
+                  </li>
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="#" class="font-[600]">Search Neigbours</a>
+                  </li>
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="#" class="font-[600]">Search Schools</a>
+                  </li>
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="#" class="font-[600]">Commercial Properties</a>
+                  </li>
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="#" class="font-[600]"
+                      >Search International Listings</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <!-- Listings -->
+            <li class="group font-[600] leading-[40px] relative cursor-pointer">
+              <div class="flex gap-2 align-middle justify-center items-center">
+                <span class="group-hover:text-blue-500">Listings</span>
+                <svg
+                  class="w-6 h-6 p-1 group-hover:text-blue-500 group-hover:rotate-180 transition duration-200 group-hover:duration-200"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </div>
+
+              <!-- Sub Menu -->
+              <div
+                class="hidden group-hover:block h-max absolute top-[90%] bg-white text-black p-0 -left-5 w-[250px] border border-gray-200"
+              >
+                <ul class="flex flex-col">
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="./listings.html" class="font-[600]"
+                      >All Listings</a
+                    >
+                  </li>
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="./solid-listings.html" class="font-[600]"
+                      >Solid Listings</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="font-[600] leading-[40px] cursor-pointer">
+              <a href="./OurAgent.html">Meet Our Agents</a>
+            </li>
+            <li class="font-[600] leading-[40px] cursor-pointer">
+              <a href="./testimonials.html">Testimonials</a>
+            </li>
+
+            <li class="font-[600] leading-[40px] cursor-pointer">
+              <a href="./contact.html">Contact Us</a>
+            </li>
+            <li class="font-[600] leading-[40px] cursor-pointer">
+              <a href="./login.html">LOGIN</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Header Menu Bar -->
+        <span class="text-black show_aside block md:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-12 p-2 h-12 text-white"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </span>
+      </div>
+
+      <!-- Hero -->
+      <div
+        class="hero relative h-[500px] bg-red top-0 bg-[url('./assets/images/privatepolicy.jpeg')] bg-blend-normal px-32"
+        style="height: 500px;"
+      >
+        <div
+          class="flex flex-col justify-center align-middle items-center md:items-start h-full gap-10 w-full px-10 md:px-0 max-w-full md:max-w-[800px] m-auto md:m-0"
+        >
+          <h2
+            class="text-white font-[600] text-[30px] md:text-[50px] sm:text-[60px] md:text-[70px] leading-none md:leading-[30px] capitalize text-center md:text-left"
+          >
+            Privacy Policies
+          </h2>
+        </div>
+      </div>
+    </header>
+
+    <!-- main -->
+    <section class="px-6 md:px-32 py-10 md:py-16">
+      <div class="block flex flex-col gap-6">
+        <p
+          style="font-family: 'Open Sans', sans-serif;"
+          class="font-[400] text-[16px] leading-[30px] text-[#5a5a5a]"
+        >
+          Effective on: 12/01/2020
+        </p>
+
+        <p
+          style="font-family: 'Open Sans', sans-serif;"
+          class="font-[400] text-[16px] leading-[30px] text-[#5a5a5a]"
+        >
+          The Houston Realtors Information Service, Inc. (“HRIS” or “our”, “us”
+          or “we”), a Texas corporation, operates HAR.com whereon real estate
+          information and related services are available to a visitor and to
+          Realtors®/licensees (for both “you” or “your”).
+        </p>
+
+        <p
+          style="font-family: 'Open Sans', sans-serif;"
+          class="font-[400] text-[16px] leading-[30px] text-[#5a5a5a]"
+        >
+          HAR.com was created to provide visitors and Realtors®/licensees
+          information in relation to the sale or rental of real estate. One of
+          our missions at HAR.com is to afford Realtors®/licensees the
+          opportunity to connect with visitors through HAR.com. This Privacy
+          Policy describes our policy relative to any and all information
+          relating to you that you have provided to us or that we have collected
+          from you. Upon your use of HAR.com, whether by entry onto HAR.com, by
+          activating any account with HAR.com or by interacting with a
+          Realtor®/licensee, you consent to our collection, use and disclosure
+          of all information about you pursuant to this Privacy Policy. Further,
+          you hereby acknowledge by your use of HAR.com that you are bound by
+          this Privacy Policy and our Terms of Use.
+        </p>
+
+        <p
+          style="font-family: 'Open Sans', sans-serif;"
+          class="font-[400] text-[16px] leading-[30px] text-[#5a5a5a]"
+        >
+          This Privacy Policy applies only to certain information we collect,
+          process and use through HAR.com. This Privacy Policy does not apply to
+          information that we collect through other channels, such as
+          information that we collect offline, from other websites, third
+          parties, public sources or from your blogs, posts, comments, texts,
+          emails or uploaded content you provide to HAR.com.
+        </p>
+
+        <p
+          style="font-family: 'Open Sans', sans-serif;"
+          class="font-[400] text-[16px] leading-[30px] text-[#5a5a5a]"
+        >
+          In addition, California residents please see important and additional
+          information at:
+          <a href="./index.html" class="text-red-500"
+            >Privacy Notice for California Residents</a
+          >.
+        </p>
+
+        <p
+          style="font-family: 'Open Sans', sans-serif;"
+          class="font-[600] text-[16px] leading-[30px] text-[#5a5a5a] mb-[-20px]"
+        >
+          1. What Information We Collect
+        </p>
+
+        <p
+          style="font-family: 'Open Sans', sans-serif;"
+          class="font-[400] text-[16px] leading-[30px] text-[#5a5a5a]"
+        >
+          a.) Information You Submit To Us. We do not collect any personally
+          identifiable information from you unless you register under a HAR.com
+          account or with a Realtor®/licensee. If you sign up for any HAR.com
+          account, or register with a Realtor®/licensee, we collect information
+          you submit to us such as your email address, your first name and last
+          name, telephone numbers, photo, username/password and any other
+          information that you choose to provide to us or a Realtor®/licensee
+          (“your information”) so that we or a Realtor®/licensee may verify your
+          identify (through use of a third party contractor who actually
+          processes the personal information you submit) and provide you
+          service. Use by and disclosure of your information to a
+          Realtor®/licensee is with your consent, is entirely optional and is a
+          service available if you desire to receive information or services
+          related to real estate. We do not collect or store “sensitive” or
+          “special categories of personal data” information as defined under
+          European data protection laws. If a credit card number is submitted by
+          you, then it and some of your information is processed by third-party
+          credit card processing companies solely for payment. They are not
+          permitted to use the credit card or your information for any purpose
+          other than to fulfill the specific purchase transaction. We do not
+          store or save your credit card number.
+        </p>
+
+        <p
+          style="font-family: 'Open Sans', sans-serif;"
+          class="font-[400] text-[16px] leading-[30px] text-[#5a5a5a]"
+        >
+          b.) IP Address. We may collect your IP (Internet Protocol) address to
+          administer our site. When a web browser or email application requests
+          a web page or email from another device on the Internet, it
+          automatically gives that device the address where it should send the
+          information. This is called the computer’s “IP address”. This
+          “address” does not contain any personally identifiable information.
+        </p>
+
+        <p
+          style="font-family: 'Open Sans', sans-serif;"
+          class="font-[400] text-[16px] leading-[30px] text-[#5a5a5a]"
+        >
+          c.) Cookies and Web Beacons. Cookies are bits of electronic
+          information that can be transferred to any device such as a computer
+          or mobile device to uniquely identify its browser. When you visit
+          HAR.com, we may place one or more cookies on your device. The use of
+          cookies helps us improve the quality of our services to you, by
+          identifying information which is most interesting to you, tracking
+          trends, or storing information you may want to retrieve on a regular
+          basis, such as your favorite homes. At any time, you may adjust the
+          settings on the browser of your device to refuse cookies. However, if
+          you choose to disable cookies, many of the free features and services
+          on HAR.com will not operate properly. Also, the pages of our service
+          may include Web beacons, which are electronic files to count users who
+          have visited that page.
+        </p>
+
+        <p
+          style="font-family: 'Open Sans', sans-serif;"
+          class="font-[400] text-[16px] leading-[30px] text-[#5a5a5a]"
+        >
+          d.) Third-party Cookies. We work with service providers and
+          advertising networks to track and manage cookie information and your
+          activities while you are on HAR.com. Our third-party ad network
+          providers and third-party advertisers may provide you with
+          advertisements that you may see on HAR.com or on other affiliated
+          websites. To improve the relevancy and help measure the effectiveness
+          of such advertisements, these ad networks or advertisers may use
+          cookies, Web beacons, or similar technologies. These are used to
+          record your online activity, such as the pages visited, and to learn
+          what types of information are of most interest to you.
+        </p>
+
+        <p
+          style="font-family: 'Open Sans', sans-serif;"
+          class="font-[400] text-[16px] leading-[30px] text-[#5a5a5a]"
+        >
+          Use of these technologies by third-party ad servers is subject to
+          their own privacy policies and is not covered by our Privacy Policy.
+          Learn more about our participation in the Network Advertising
+          Initiative, and the choices you have about these technologies (such as
+          opting-out) at networkadvertising.org The Network Advertising
+          Initiative offers some centralized opt-out tools; otherwise you must
+          visit each provider’s website individually and opt out. Opting out of
+          these services does not mean you will no longer receive online
+          advertising. It does mean that the service from which you opted out
+          will no longer deliver ads tailored to your web preferences and usage
+          patterns.
+        </p>
+
+        <p
+          style="font-family: 'Open Sans', sans-serif;"
+          class="font-[400] text-[16px] leading-[30px] text-[#5a5a5a]"
+        >
+          e.) Usage Logs. When on HAR.com, your device communicates a variety of
+          information to computer servers, including the existence of cookies,
+          your Internet Protocol address, and information about your browser
+          program. We also create a record of information you are requesting,
+          such as the page or subject areas you are visiting.
+        </p>
+
+        <p
+          style="font-family: 'Open Sans', sans-serif;"
+          class="font-[400] text-[16px] leading-[30px] text-[#5a5a5a]"
+        >
+          f.) Location Data. HAR.com can provide you with helpful information
+          based on where you are. If you tell HAR.com where you are (e.g., by
+          allowing your device to send HAR.com your location), HAR.com may use
+          that information to provide you with location-based information and
+          advertising. Your general location information may be shared with
+          third parties. If you wish to deactivate this feature, you can disable
+          location services on your device.
+        </p>
+
+        <p
+          style="font-family: 'Open Sans', sans-serif;"
+          class="font-[400] text-[16px] leading-[30px] text-[#5a5a5a]"
+        >
+          g.) Social Information. When you enter HAR.com through Google,
+          Facebook, Twitter or any other third-party authorization service
+          (“Social Information Site”), we may receive information that you
+          authorize the Social Information Site to share with us, which may
+          include your information. When we receive this information, it becomes
+          HAR.com information for purposes of your use of this site. Your
+          information would also be subject to our Privacy Policy. Any
+          information that we collect from your Social Information Site account
+          may depend on the privacy settings you have set with that Social
+          Information Site, so please consult that Social Information Site’s
+          privacy policy. You have the ability to disconnect your Social
+          Information Site account from HAR.com by adapting the privacy settings
+          in your Social Information Site account. If you come to the HAR.com
+          through a Social Information Site, from other websites or with devices
+          that enable third parties to collect information from or about you,
+          such third parties receive information about you subject to their
+          privacy policies. We may make use of the information that they provide
+          us to further customize your HAR.com experience.
+        </p>
+
+        <p
+          style="font-family: 'Open Sans', sans-serif;"
+          class="font-[400] text-[16px] leading-[30px] text-[#5a5a5a]"
+        >
+          h.) Members Only. To gain access to the members-only resources, the
+          Houston Association of Realtors, Inc. (HAR) members are given a login
+          and password. We do not collect any personally identifiable
+          information from members, affiliates or service providers online
+          unless you voluntarily create an account or profile or complete our
+          service provider or advertising forms. During this process we collect
+          contact information such as name, business address, home address,
+          photo, birthday, photo, telephone numbers (including mobile), and
+          email address. HAR and/or HRIS will use this information to provide
+          requested services such as access to the Members Only Site, HAR member
+          Websites, and the Member Finder. HAR and/or HRIS may use your email
+          address or mobile phone number to contact you for association
+          business, weekly newsletters, updated information, surveys or
+          promotions. HAR and/or HRIS will use your mailing address and/or email
+          address to send print and/or online versions the Houston REALTOR
+          magazine. We use a third-party credit card processing companies to
+          process payments for membership dues or other member payments. They
+          are not permitted to use the credit card information or your
+          information for any purpose other than to fulfill the specific payment
+          transaction. We do not store or save your credit card number, but we
+          may keep a generic and non-personal identity of your account for
+          reoccurring membership payments. A list of these vendor companies and
+          the one for your account is available upon request. We also collect
+          licensing information such as TREC license which we then verify
+          against TREC database using online database on their website. Real
+          estate license information is public information, and anyone can
+          verify the same by visiting trec.texas.gov Your contact and other
+          information is available to visitors to HAR.com by way of HAR Member
+          Websites, and/or Agent Profile. Access to HAR.com services are made
+          available with your consent.
+        </p>
+
+        <p
+          style="font-family: 'Open Sans', sans-serif;"
+          class="font-[600] text-[16px] leading-[30px] text-[#5a5a5a] mb-[-20px]"
+        >
+          2. How We Use the Information
+        </p>
+
+        <p
+          style="font-family: 'Open Sans', sans-serif;"
+          class="font-[400] text-[16px] leading-[30px] text-[#5a5a5a]"
+        >
+          a.) To Provide You Services. If you have chosen to receive information
+          from a Realtor®/licensee by submitting your information to them on
+          HAR.com, then that Realtor®/licensee may use your information to
+          identify you, contact you and provide you real estate related
+          services. If you have activated some type of HAR.com account, we may
+          share your information and activity from that account with
+          Realtors®/licensees in order for them to provide you real estate
+          related information in relation to the type of account or services you
+          activated. HAR.com will use information collected as described in 1.
+          b)-f), internally, to provide you better services on HAR.com. Also,
+          HAR.com, HAR and/or HRIS may use your email address to contact you for
+          any updated information, surveys or promotions.
+        </p>
+
+        <p
+          style="font-family: 'Open Sans', sans-serif;"
+          class="font-[400] text-[16px] leading-[30px] text-[#5a5a5a]"
+        >
+          b. ) Entity Sale. We may disclose, transfer, sell or assign your
+          information obtained through HAR.com, or information otherwise in its
+          possession, to third parties as a result of a sale, merger,
+          consolidation, change in control, transfer of substantial assets,
+          reorganization or liquidation of HAR and/or HRIS. You will be notified
+          via email or prominent notice on HAR.com for 30 days of any such
+          change in ownership or control of your information.
+        </p>
+
+        <p
+          style="font-family: 'Open Sans', sans-serif;"
+          class="font-[400] text-[16px] leading-[30px] text-[#5a5a5a]"
+        >
+          c.) Investigations. We may also make your information available to law
+          enforcement personnel and agencies when requested to do so or as
+          required by law, subpoena or court order. We may disclose information
+          that is useful or helpful to prevent, investigate or address possible
+          wrongdoing in connection with any service provided by us, to protect
+          our services as well as our users, affiliates, vendors, us or the
+          public and to enforce our Terms of Use. Information you provide to us
+          relative to complaints or comments about another may be shared with
+          the person or entity to which the complaints or comments were directed
+          as well as the public.
+        </p>
+
+        <p
+          style="font-family: 'Open Sans', sans-serif;"
+          class="font-[400] text-[16px] leading-[30px] text-[#5a5a5a]"
+        >
+          d.) Retention and Termination. We will retain your information for as
+          long as your account is active or as needed to provide you services.
+          The subsequent use, management or disclosure of any information
+          collected by or provided to third parties such as Realtors®/licensees
+          is subject to their privacy policies and practices. If you wish to
+          cancel your account with HAR.com or request that we no longer use your
+          information to provide you services, then contact us at
+          <a href="./index.html" class="text-red-500">privacy@har.com</a>. We
+          will retain and use your information as necessary to comply with our
+          legal obligations, perform investigations, resolve disputes, and
+          enforce our agreements.
+        </p>
+
+        <p
+          style="font-family: 'Open Sans', sans-serif;"
+          class="font-[600] text-[16px] leading-[30px] text-[#5a5a5a] mb-[-20px]"
+        >
+          3. You Have Choices
+        </p>
+
+        <p
+          style="font-family: 'Open Sans', sans-serif;"
+          class="font-[400] text-[16px] leading-[30px] text-[#5a5a5a]"
+        >
+          HAR.com offers you the opportunity to correct, update and amend your
+          information at your HAR.com account at any time. Simply access your
+          account settings page and change, remove or update your information
+          there. You can withdraw your consent for our use of your information
+          at any time by going to your account settings and deleting the
+          account. Withdrawing your consent will not affect the lawfulness of
+          any processing of your information we conducted prior to your
+          withdrawal or deletion, nor will it affect processing of information
+          conducted in reliance on lawful processing grounds other than consent.
+          If you have any concerns, want an electronic copy of your information
+          from your account, or need help in correcting, updating, amending or
+          removing your information at HAR.com, then please contact us by email
+          at <a href="./index.html" class="text-red-500">privacy@har.com</a> or
+          call us at (713) 629-1900, and we will help you in any way possible.
+        </p>
+
+        <p
+          style="font-family: 'Open Sans', sans-serif;"
+          class="font-[600] text-[16px] leading-[30px] text-[#5a5a5a] mb-[-20px]"
+        >
+          4. Email Management
+        </p>
+
+        <p
+          style="font-family: 'Open Sans', sans-serif;"
+          class="font-[400] text-[16px] leading-[30px] text-[#5a5a5a]"
+        >
+          You may receive email from HAR.com for a variety of reasons. We
+          respect your desire to manage email correspondence. If you have an
+          account with HAR.com, you can select your preferences through your
+          account tools. Also, you can manage your receipt of some types of
+          communication by following the instructions included in the email we
+          send you. If you wish not to receive further emails from real estate
+          entities or agents with whom you have registered, then you must
+          personally contact that entity or agent and convey that information to
+          them.
+        </p>
+
+        <p
+          style="font-family: 'Open Sans', sans-serif;"
+          class="font-[600] text-[16px] leading-[30px] text-[#5a5a5a] mb-[-20px]"
+        >
+          5. Storage and Security of Data
+        </p>
+
+        <p
+          style="font-family: 'Open Sans', sans-serif;"
+          class="font-[400] text-[16px] leading-[30px] text-[#5a5a5a]"
+        >
+          We also want you to know that we take the security of your information
+          very seriously. We use industry accepted tools and procedures that
+          protects certain data in our system. However, due to the open
+          communication nature of the Internet we cannot guarantee that
+          information we receive from you or that communication between you and
+          us and us and you will be free from unauthorized access by third
+          parties.
+        </p>
+
+        <p
+          style="font-family: 'Open Sans', sans-serif;"
+          class="font-[600] text-[16px] leading-[30px] text-[#5a5a5a] mb-[-20px]"
+        >
+          6. Business & Privacy Issues with Links to Other Sites
+        </p>
+
+        <p
+          style="font-family: 'Open Sans', sans-serif;"
+          class="font-[400] text-[16px] leading-[30px] text-[#5a5a5a]"
+        >
+          We are not responsible for the availability of or the business and
+          privacy practices for other websites which are linked or connected to
+          HAR.com. We provide these links for information and service. We do not
+          take responsibility for the contents, advertising, products or other
+          materials made available through any other websites nor for their data
+          collection practices. We refer you to their privacy statements and
+          policies to learn how they collect and use information about you.
+        </p>
+
+        <p
+          style="font-family: 'Open Sans', sans-serif;"
+          class="font-[600] text-[16px] leading-[30px] text-[#5a5a5a] mb-[-20px]"
+        >
+          7. Children
+        </p>
+
+        <p
+          style="font-family: 'Open Sans', sans-serif;"
+          class="font-[400] text-[16px] leading-[30px] text-[#5a5a5a]"
+        >
+          HAR.com is intended for general audiences and is not directed to
+          children under 13. We do not knowingly collect information from
+          children under 13. If you become aware that a child has provided us
+          with information without parental consent, please contact us. If we
+          become aware that a child under 13 has provided us with information
+          without parental consent, we take steps to remove such information and
+          terminate the child’s account.
+        </p>
+
+        <p
+          style="font-family: 'Open Sans', sans-serif;"
+          class="font-[600] text-[16px] leading-[30px] text-[#5a5a5a] mb-[-20px]"
+        >
+          8. Privacy Statement Changes
+        </p>
+
+        <p
+          style="font-family: 'Open Sans', sans-serif;"
+          class="font-[400] text-[16px] leading-[30px] text-[#5a5a5a]"
+        >
+          HAR.com reserves the right to make changes to its Privacy Policy at
+          any time. Any changes will be effective on the Effective Date noted
+          above. Your use of HAR.com after the Effective Date constitutes your
+          acceptance of any changes to the Privacy Policy. It is your
+          responsibility to read and understand what, if any, changes affect
+          you.
+        </p>
+
+        <p
+          style="font-family: 'Open Sans', sans-serif;"
+          class="font-[600] text-[16px] leading-[30px] text-[#5a5a5a] mb-[-20px]"
+        >
+          9. Questions About Our Privacy Policy?
+        </p>
+
+        <p
+          style="font-family: 'Open Sans', sans-serif;"
+          class="font-[400] text-[16px] leading-[30px] text-[#5a5a5a]"
+        >
+          If you have any questions about our Privacy Policy or the practices of
+          HAR.com, you can send an email to privacy@har.com, or send
+          correspondence to Houston Realtors Information Service, Inc.,
+          Attention: Privacy Policy Issue, 3693 Southwest Freeway Houston, TX
+          77027. You can reach us by phone at (713) 629-1900.
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#19212d]">
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 items-center p-10 border-b border-b-black justify-center"
+      >
+        <div class="space-y-5 px-0 mb-10">
+          <div class="w-full">
+            <img
+              class="w-[100px] rounded-full mx-[40px]"
+              src="./assets/images/logo-small-200.jpg"
+              alt=""
+            />
+          </div>
+
+          <p class="max-w-sm text-slate-200 px-0 mb-5 md:px-10 md:mb-0">
+            We offer one stop customized Strategies and Services Plans tailored
+            to each client's individual needs in both residential and commercial
+            real estate
+          </p>
+
+          <!-- Social Icons -->
+          <div
+            class="flex items-center md:justify-center text-white text-[25px] relative flex-row gap-3 pb-5"
+          >
+            <a href="">
+              <i
+                class="fab fa-facebook bg-red-600 p-2 rounded-full hover: bg-white hover:text-blue-500"
+                aria-hidden="true"
+              ></i>
+            </a>
+            <a href="">
+              <i
+                class="fab fa-twitter-square bg-red-600 p-2 rounded-full hover: bg-white hover:text-blue-500"
+                aria-hidden="true"
+              ></i>
+            </a>
+            <a href="">
+              <i
+                class="fab fa-youtube bg-red-600 p-2 rounded-full hover: bg-white hover:text-blue-500"
+                aria-hidden="true"
+              ></i>
+            </a>
+            <a href="">
+              <i
+                class="fab fa-instagram bg-red-600 p-2 rounded-full hover: bg-white hover:text-blue-500"
+                aria-hidden="true"
+              ></i>
+            </a>
+          </div>
+        </div>
+        <div
+          class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 col-span-3"
+        >
+          <div class="space-y-3 text-white">
+            <div>
+              <h1 class="text-xl font-medium">Our Company</h1>
+            </div>
+
+            <div class="text-slate-200">
+              <a href="./about.html"><p>About Company</p></a>
+              <a href="./contact.html"><p>Contact</p></a>
+              <a href="./policy.html"><p>Privacy Policy</p></a>
+              <p>Terms and Conditions</p>
+            </div>
+          </div>
+          <div class="space-y-3 text-white">
+            <div>
+              <h1 class="font-medium text-xl">Our Services</h1>
+            </div>
+
+            <div class="text-slate-200">
+              <p>News</p>
+              <p>Video Production</p>
+              <p>Home Finding</p>
+              <p>Search Schools</p>
+            </div>
+          </div>
+          <div class="space-y-5 text-white">
+            <div>
+              <h1 class="font-lg text-lg">Contact details</h1>
+            </div>
+            <div class="text-slate-200">
+              <p>2925 Richmond Ave, Ste 1200</p>
+              <p>Houston, Tx 77098</p>
+              <p>(281)451-0185</p>
+              <p>jennywangrealestate@gmail.com</p>
+            </div>
+          </div>
+
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 gap-5 md:block md:flex-row"
+          >
+            <div class="text-white text-sm">
+              <p>Texas Real Estate Commission Consumer</p>
+              <p>Protection Notice</p>
+            </div>
+
+            <div class="text-white text-sm">
+              <p>Texas Real Estate Commission Consumer</p>
+              <p>Protection Notice</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="flex flex-col md:flex-row justify-between items-center p-4 lg:p-[30px] align-center px-10 md:px-[90px] text-xs"
+      >
+        <p class="text-slate-200 align-center">
+          Copyright &copy; 2022 JWang Properties
+        </p>
+        <p class="text-slate-200 align-center">Powered by jwang Properties</p>
+      </div>
+    </footer>
+  </body>
+</html>

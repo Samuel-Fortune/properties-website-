@@ -1,0 +1,1670 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>testimonial.html</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- Tailwind css -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!--Header-->
+    <header class="relative">
+      <div
+        class="main_header absolute z-50 top-0 right-0 left-0 w-full bg-transparent border-b text-white font-semibold border-b-gray-50 flex justify-between align-middle items-center p-5 px-10 sm:px-20 md:px-32"
+      >
+        <a class="text-xl font-semibold" href="./index.html">
+          <img
+            class="w-[90px] h-[90px] object-contain mx-auto"
+            src="./assets/images/real-logo.png"
+            alt="Logo"
+          />
+        </a>
+
+        <nav class="hidden md:block">
+          <ul>
+            <li class="font-[600] leading-[40px] cursor-pointer">
+              <a href="./index.html">Home</a>
+            </li>
+
+            <!-- About -->
+            <li class="group font-[600] leading-[40px] relative cursor-pointer">
+              <div class="flex gap-2 align-middle justify-center items-center">
+                <span class="group-hover:text-blue-500">About</span>
+                <svg
+                  class="w-6 h-6 p-1 group-hover:text-blue-500 group-hover:rotate-180 transition duration-200 group-hover:duration-200"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </div>
+
+              <!-- Sub Menu -->
+              <div
+                class="hidden group-hover:block h-max absolute top-[90%] bg-white text-black p-0 -left-5 w-[250px] border border-gray-200"
+              >
+                <ul class="flex flex-col">
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="./about.html" class="font-[600]"
+                      >About Jwang Properties</a
+                    >
+                  </li>
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="./story.html" class="font-[600]">My Story</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <!-- Search -->
+            <li class="group font-[600] leading-[40px] relative cursor-pointer">
+              <div class="flex gap-2 align-middle justify-center items-center">
+                <span class="group-hover:text-blue-500">Search</span>
+                <svg
+                  class="w-6 h-6 p-1 group-hover:text-blue-500 group-hover:rotate-180 transition duration-200 group-hover:duration-200"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </div>
+
+              <!-- Sub Menu -->
+              <div
+                class="hidden group-hover:block h-max absolute top-[90%] bg-white text-black p-0 -left-5 w-[250px] border border-gray-200"
+              >
+                <ul class="flex flex-col">
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="#" class="font-[600]">Search For Homes</a>
+                  </li>
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="#" class="font-[600]">Search With Maps</a>
+                  </li>
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="#" class="font-[600]">Search Neigbours</a>
+                  </li>
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="#" class="font-[600]">Search Schools</a>
+                  </li>
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="#" class="font-[600]">Commercial Properties</a>
+                  </li>
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="#" class="font-[600]"
+                      >Search International Listings</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <!-- Listings -->
+            <li class="group font-[600] leading-[40px] relative cursor-pointer">
+              <div class="flex gap-2 align-middle justify-center items-center">
+                <span class="group-hover:text-blue-500">Listings</span>
+                <svg
+                  class="w-6 h-6 p-1 group-hover:text-blue-500 group-hover:rotate-180 transition duration-200 group-hover:duration-200"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </div>
+
+              <!-- Sub Menu -->
+              <div
+                class="hidden group-hover:block h-max absolute top-[90%] bg-white text-black p-0 -left-5 w-[250px] border border-gray-200"
+              >
+                <ul class="flex flex-col">
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="./listings.html" class="font-[600]"
+                      >All Listings</a
+                    >
+                  </li>
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="./solid-listings.html" class="font-[600]"
+                      >Solid Listings</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="font-[600] leading-[40px] cursor-pointer">
+              <a href="./OurAgent.html">Meet Our Agents</a>
+            </li>
+            <li class="font-[600] leading-[40px] cursor-pointer">
+              <a href="./testimonials.html">Testimonials</a>
+            </li>
+
+            <li class="font-[600] leading-[40px] cursor-pointer">
+              <a href="./contact.html">Contact Us</a>
+            </li>
+            <li class="font-[600] leading-[40px] cursor-pointer">
+              <a href="./login.html">LOGIN</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Header Menu Bar -->
+        <span class="text-black show_aside block md:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-12 p-2 h-12 text-white"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </span>
+      </div>
+
+      <!-- Hero -->
+      <div
+        class="hero relative h-[600px] top-0 bg-[url('./assets/images/testimonials.jpg')] bg-blend-normal px-32"
+        style="height: 600px;"
+      >
+        <div
+          class="flex flex-col justify-center align-middle items-center md:items-start h-full gap-10 w-full px-10 md:px-0 max-w-full md:max-w-[800px] m-auto md:m-0"
+        >
+          <h2
+            class="text-white font-[600] text-[50px] sm:text-[60px] md:text-[70px] leading-none md:leading-[30px] capitalize text-center md:text-left"
+          >
+            Testimonials
+          </h2>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main by Aizenosa -->
+    <main>
+      <section class="bg-[#f3f7fc] px-10 md:px-32 py-10 md:py-32">
+        <div>
+          <h2 class="text-[37px] font-semibold mb-[10px] tracking-[2px]">
+            Recent Reviews
+          </h2>
+
+          <p
+            class="text-[#5A5A5A] font-[300] leading-[40px]"
+            style="font-family: 'Open Sans', sans-serif;"
+          >
+            Over the years, we have prioritized clients’ satisfaction above
+            anything else. It is for reasons like these that our clients have
+            fruitful reviews about our work.
+          </p>
+
+          <div
+            class="flex flex-col md:flex-row gap-[110px]"
+            style="
+              margin-top: 85px;
+              align-items: center;
+              justify-content: space-between;
+            "
+          >
+            <div
+              class="relative w-[535px]"
+              style="
+                border: 4px solid #cbd2de;
+                position: relative;
+                height: 353px;
+                top: 25px;
+                left: 30px;
+              "
+            >
+              <img
+                class="w-[522px] h-[330px]"
+                src="./assets/images/testi-2.jpeg"
+                style="
+                  position: absolute;
+                  bottom: 60px;
+                  right: 32px;
+                  box-shadow: 64px 64px 160px -40px rgb(0 0 0 / 24%);
+                "
+                alt=""
+              />
+              <div
+                style="
+                  position: absolute;
+                  bottom: 0px;
+                  background-color: white;
+                  height: 118px;
+                  display: flex;
+                  align-items: center;
+                  padding-left: 45px;
+                  gap: 15px;
+                "
+                class="w-full"
+              >
+                <img
+                  style="width: 39px; height: 40px; border-radius: 50%;"
+                  src="./assets/images/Flo-Bell.jpeg"
+                  alt=""
+                />
+                <span class="text-[#5A5A5A] font-[300]">Florence B</span>
+              </div>
+            </div>
+
+            <div class="w-[50%] pr-[10px]">
+              <p class="text-[15px]">Houston, TX 77019</p>
+              <p
+                class="text-[37px] font-semibold leading-2"
+                style="font-family: 'Barlow', sans-serif;"
+              >
+                1601 S Shepherd Drive #210
+                <span
+                  class="bg-[#e62e2d] w-[65px] h-[4px] block mb-[20px]"
+                ></span>
+              </p>
+
+              <p
+                class="text-[#5A5A5A] font-[300] leading-[30px] mb-[15px]"
+                style="font-family: 'Open Sans', sans-serif; font-size: 17px;"
+              >
+                “Jenny Wang is a fantastic Realtor. She is patient and listened
+                to
+                <br />
+                my concerns and needs. She did an amazing job showcasing my
+                <br />
+                property. It wasn’t on the market long. I would recommend her
+                <br />to anyone.”
+              </p>
+              <div
+                class="flex flex-row gap-3.5 text-[#5A5A5A] font-[300]"
+                style="font-family: 'Open Sans', sans-serif; font-size: 17px;"
+              >
+                5.00/5.00
+                <div class="flex w-[80px]">
+                  <svg
+                    class="w-6 h-6 text-[#efad4e]"
+                    fill="#efad4e"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                    ></path>
+                  </svg>
+                  <svg
+                    class="w-6 h-6 text-[#efad4e]"
+                    fill="#efad4e"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                    ></path>
+                  </svg>
+                  <svg
+                    class="w-6 h-6 text-[#efad4e]"
+                    fill="#efad4e"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                    ></path>
+                  </svg>
+                  <svg
+                    class="w-6 h-6 text-[#efad4e]"
+                    fill="#efad4e"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                    ></path>
+                  </svg>
+                  <svg
+                    class="w-6 h-6 text-[#efad4e]"
+                    fill="#efad4e"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="bg-[#e62e2d] w-[220px] h-[52px] block Aizenosa mt-[30px]"
+              >
+                <a href="#">
+                  <span
+                    style="
+                      display: grid;
+                      place-items: center;
+                      padding: 14.5px 0px;
+                      color: white;
+                      font-size: 14px;
+                    "
+                    >VIEW ON HAR.COM &rightarrow;</span
+                  ></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-row gap-[36px]"
+            style="margin-top: 85px; align-items: center;"
+          >
+            <div class="w-[50%]">
+              <p class="text-[15px]">Sugar Land, TX 77479</p>
+              <p
+                class="text-[37px] font-semibold leading-2"
+                style="font-family: 'Barlow', sans-serif;"
+              >
+                222 Chatham Avenue
+                <span
+                  class="bg-[#e62e2d] w-[65px] h-[4px] block mb-[20px]"
+                ></span>
+              </p>
+
+              <p
+                class="text-[#5A5A5A] font-[300] leading-[30px] mb-[15px]"
+                style="font-family: 'Open Sans', sans-serif; font-size: 17px;"
+              >
+                “Jenny Wang is an awesome person to work with. I felt so <br />
+                comfortable throughout the process that she was working for
+                <br />
+                me. She explained everything in simple terms for me to <br />
+                understand. Her weekly research emails were also very helpful.
+                <br />
+                The extra touch in many aspects of the process made this <br />
+                buying experience unique for sure. I highly recommend this
+                <br />
+                realtor!”
+              </p>
+              <div
+                class="flex flex-row gap-3.5 text-[#5A5A5A] font-[300]"
+                style="font-family: 'Open Sans', sans-serif; font-size: 17px;"
+              >
+                5.00/5.00
+                <div class="flex w-[80px]">
+                  <svg
+                    class="w-6 h-6 text-[#efad4e]"
+                    fill="#efad4e"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                    ></path>
+                  </svg>
+                  <svg
+                    class="w-6 h-6 text-[#efad4e]"
+                    fill="#efad4e"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                    ></path>
+                  </svg>
+                  <svg
+                    class="w-6 h-6 text-[#efad4e]"
+                    fill="#efad4e"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                    ></path>
+                  </svg>
+                  <svg
+                    class="w-6 h-6 text-[#efad4e]"
+                    fill="#efad4e"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                    ></path>
+                  </svg>
+                  <svg
+                    class="w-6 h-6 text-[#efad4e]"
+                    fill="#efad4e"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="bg-[#e62e2d] w-[220px] h-[52px] block Aizenosa mt-[25px]"
+              >
+                <a href="#">
+                  <span
+                    style="
+                      display: grid;
+                      place-items: center;
+                      padding: 14.5px 0px;
+                      color: white;
+                      font-size: 14px;
+                    "
+                    >VIEW ON HAR.COM &rightarrow;</span
+                  ></a
+                >
+              </div>
+            </div>
+
+            <div
+              class="relative w-[516px]"
+              style="
+                border: 4px solid #cbd2de;
+                position: relative;
+                height: 400px;
+                top: 25px;
+                left: 30px;
+              "
+            >
+              <img
+                class="w-[535px] h-[348px]"
+                src="./assets/images/testi-3.jpeg"
+                style="
+                  position: absolute;
+                  bottom: 75px;
+                  right: 45px;
+                  box-shadow: 64px 64px 160px -40px rgb(0 0 0 / 24%);
+                "
+                alt=""
+              />
+              <div
+                style="
+                  position: absolute;
+                  top: 270px;
+                  background-color: white;
+                  height: 122px;
+                  display: flex;
+                  align-items: center;
+                  padding-left: 45px;
+                  gap: 15px;
+                "
+                class="w-full"
+              >
+                <img
+                  style="width: 39px; height: 40px; border-radius: 50%;"
+                  src="./assets/images/avatar-girl-150x150.png"
+                  alt=""
+                />
+                <span
+                  class="text-[#5A5A5A] font-[300] flex flex-col align-middle justify-center h-full"
+                  ><p>Dale K</p>
+                  <p style="font-size: 14px;">Survey On Aug 27, 2020</p>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-row gap-[124px]"
+            style="
+              margin-top: 85px;
+              align-items: center;
+              justify-content: space-between;
+            "
+          >
+            <div
+              class="relative w-[522px]"
+              style="
+                border: 4px solid #cbd2de;
+                position: relative;
+                height: 692px;
+                top: 25px;
+                left: 30px;
+              "
+            >
+              <img
+                class="w-[522px] h-[680px]"
+                src="./assets/images/testi-4.jpeg"
+                style="
+                  position: absolute;
+                  bottom: 50px;
+                  right: 35px;
+                  box-shadow: 64px 64px 160px -40px rgb(0 0 0 / 24%);
+                "
+                alt=""
+              />
+              <div
+                style="
+                  position: absolute;
+                  bottom: 0;
+                  background-color: white;
+                  height: 100px;
+                  display: flex;
+                  align-items: center;
+                  padding-left: 45px;
+                  gap: 15px;
+                "
+                class="w-full"
+              >
+                <img
+                  style="width: 39px; height: 40px; border-radius: 50%;"
+                  src="./assets/images/avatar-boy-150x150.jpeg"
+                  alt=""
+                />
+                <span
+                  class="text-[#5A5A5A] font-[300] flex flex-col align-middle justify-center h-full"
+                  ><p>Olga R</p>
+                  <p style="font-size: 14px;">
+                    Comment received on Jul 07, 2019
+                  </p>
+                </span>
+              </div>
+            </div>
+
+            <div class="w-[50%] pr-[10px]">
+              <p class="text-[15px]">Houston, TX 77080</p>
+              <p
+                class="text-[37px] font-semibold leading-2"
+                style="font-family: 'Barlow', sans-serif;"
+              >
+                2502 Knoll Street
+                <span
+                  class="bg-[#e62e2d] w-[65px] h-[4px] block mb-[20px]"
+                ></span>
+              </p>
+
+              <p
+                class="text-[#5A5A5A] font-[300] leading-[30px] mb-[15px]"
+                style="font-family: 'Open Sans', sans-serif; font-size: 17px;"
+              >
+                “ We had an amazing experience beyond our expectations. We have
+                used Jenny’s services previously to buy a house and have used
+                her again as landlords. She is the most responsible, <br />
+                prompt, clear and honest person you can wish for. She is easy
+                <br />
+                to work with, goes above and beyond for any detail and request.
+                <br />
+                She posted great pictures, gave great advices on tenants and
+                <br />
+                maintenance, and we started having offers within a week. I will
+                <br />
+                highly recommend Jenny as she will represent your best <br />
+                interest, will be patient, will honor your requests and will
+                work
+                <br />
+                with any budget. We will definitely be using her in the future
+                for
+                <br />
+                any real estate business. She makes you feel very important,
+                <br />
+                and every question or request seems to be her priority. I know
+                <br />
+                she is busy and I really appreciate the amount of time she
+                <br />
+                devotes to her clients. Thank you Jenny for your amazing work. ”
+              </p>
+              <div
+                class="flex flex-row gap-3.5 text-[#5A5A5A] font-[300]"
+                style="font-family: 'Open Sans', sans-serif; font-size: 17px;"
+              >
+                5.00/5.00
+                <div class="flex w-[80px]">
+                  <svg
+                    class="w-6 h-6 text-[#efad4e]"
+                    fill="#efad4e"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                    ></path>
+                  </svg>
+                  <svg
+                    class="w-6 h-6 text-[#efad4e]"
+                    fill="#efad4e"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                    ></path>
+                  </svg>
+                  <svg
+                    class="w-6 h-6 text-[#efad4e]"
+                    fill="#efad4e"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                    ></path>
+                  </svg>
+                  <svg
+                    class="w-6 h-6 text-[#efad4e]"
+                    fill="#efad4e"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                    ></path>
+                  </svg>
+                  <svg
+                    class="w-6 h-6 text-[#efad4e]"
+                    fill="#efad4e"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="bg-[#e62e2d] w-[220px] h-[52px] block Aizenosa mt-[30px]"
+              >
+                <a href="#">
+                  <span
+                    style="
+                      display: grid;
+                      place-items: center;
+                      padding: 14.5px 0px;
+                      color: white;
+                      font-size: 14px;
+                    "
+                    >VIEW ON HAR.COM &rightarrow;</span
+                  ></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-row gap-[36px]"
+            style="margin-top: 85px; align-items: center;"
+          >
+            <div class="w-[50%]">
+              <p class="text-[15px]">611 Abloom Court</p>
+              <p
+                class="text-[37px] font-semibold leading-2"
+                style="font-family: 'Barlow', sans-serif;"
+              >
+                611 Abloom Court
+                <span
+                  class="bg-[#e62e2d] w-[65px] h-[4px] block mb-[20px]"
+                ></span>
+              </p>
+
+              <p
+                class="text-[#5A5A5A] font-[300] leading-[30px] mb-[15px]"
+                style="font-family: 'Open Sans', sans-serif; font-size: 17px;"
+              >
+                “Ms. Jenny Wang is very knowledgeable and professional. I have
+                used her to both sell and purchase homes for me. She understands
+                her clients needs and works diligently to finalize the deal. She
+                also is more than willing to alter her schedule to fit her
+                clients needs. I highly recommend Mrs. Wang. ”
+              </p>
+              <div
+                class="flex flex-row gap-3.5 text-[#5A5A5A] font-[300]"
+                style="font-family: 'Open Sans', sans-serif; font-size: 17px;"
+              >
+                5.00/5.00
+                <div class="flex w-[80px]">
+                  <svg
+                    class="w-6 h-6 text-[#efad4e]"
+                    fill="#efad4e"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                    ></path>
+                  </svg>
+                  <svg
+                    class="w-6 h-6 text-[#efad4e]"
+                    fill="#efad4e"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                    ></path>
+                  </svg>
+                  <svg
+                    class="w-6 h-6 text-[#efad4e]"
+                    fill="#efad4e"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                    ></path>
+                  </svg>
+                  <svg
+                    class="w-6 h-6 text-[#efad4e]"
+                    fill="#efad4e"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                    ></path>
+                  </svg>
+                  <svg
+                    class="w-6 h-6 text-[#efad4e]"
+                    fill="#efad4e"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="bg-[#e62e2d] w-[220px] h-[52px] block Aizenosa mt-[25px]"
+              >
+                <a href="#">
+                  <span
+                    style="
+                      display: grid;
+                      place-items: center;
+                      padding: 14.5px 0px;
+                      color: white;
+                      font-size: 14px;
+                    "
+                    >VIEW ON HAR.COM &rightarrow;</span
+                  ></a
+                >
+              </div>
+            </div>
+
+            <div
+              class="relative w-[516px]"
+              style="
+                border: 4px solid #cbd2de;
+                position: relative;
+                height: 400px;
+                top: 25px;
+                left: 30px;
+              "
+            >
+              <img
+                class="w-[535px] h-[348px]"
+                src="./assets/images/testi-5.jpeg"
+                style="
+                  position: absolute;
+                  bottom: 75px;
+                  right: 45px;
+                  box-shadow: 64px 64px 160px -40px rgb(0 0 0 / 24%);
+                "
+                alt=""
+              />
+              <div
+                style="
+                  position: absolute;
+                  top: 270px;
+                  background-color: white;
+                  height: 122px;
+                  display: flex;
+                  align-items: center;
+                  padding-left: 45px;
+                  gap: 15px;
+                "
+                class="w-full"
+              >
+                <img
+                  style="width: 39px; height: 40px; border-radius: 50%;"
+                  src="./assets/images/avatar-girl-150x150.png"
+                  alt=""
+                />
+                <span
+                  class="text-[#5A5A5A] font-[300] flex flex-col align-middle justify-center h-full"
+                  ><p>Mary B</p>
+                  <p style="font-size: 14px;">
+                    Comment received on Mar 06, 2019
+                  </p>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-row gap-[110px]"
+            style="
+              margin-top: 85px;
+              align-items: center;
+              justify-content: space-between;
+            "
+          >
+            <div
+              class="relative w-[535px]"
+              style="
+                border: 4px solid #cbd2de;
+                position: relative;
+                height: 353px;
+                top: 25px;
+                left: 30px;
+              "
+            >
+              <img
+                class="w-[522px] h-[330px]"
+                src="./assets/images/testi-6.jpeg"
+                style="
+                  position: absolute;
+                  bottom: 60px;
+                  right: 32px;
+                  box-shadow: 64px 64px 160px -40px rgb(0 0 0 / 24%);
+                "
+                alt=""
+              />
+              <div
+                style="
+                  position: absolute;
+                  bottom: 0px;
+                  left: 0px;
+                  background-color: white;
+                  height: 115px;
+                  display: flex;
+                  align-items: center;
+                  padding-left: 45px;
+                  gap: 15px;
+                "
+                class="w-full"
+              >
+                <img
+                  style="width: 39px; height: 40px; border-radius: 50%;"
+                  src="./assets/images/Polo-Garcia.jpeg"
+                  alt=""
+                />
+                <span
+                  class="text-[#5A5A5A] font-[300] flex flex-col align-middle justify-center h-full"
+                  ><p>Polo G</p>
+                  <p style="font-size: 14px;">
+                    Comment received on Feb 21, 2019
+                  </p>
+                </span>
+              </div>
+            </div>
+
+            <div class="w-[50%] pr-[10px]">
+              <p class="text-[15px]">Houston, TX 77096</p>
+              <p
+                class="text-[37px] font-semibold leading-2"
+                style="font-family: 'Barlow', sans-serif;"
+              >
+                10814 Ashcroft Drive
+                <span
+                  class="bg-[#e62e2d] w-[65px] h-[4px] block mb-[20px]"
+                ></span>
+              </p>
+
+              <p
+                class="text-[#5A5A5A] font-[300] leading-[30px] mb-[15px]"
+                style="font-family: 'Open Sans', sans-serif; font-size: 17px;"
+              >
+                “Jenny was very helpful and professional during the whole <br />
+                transaction. I really recommend her if you need to buy or sell
+                <br />
+                Properties in the Houston area. ”
+              </p>
+              <div
+                class="flex flex-row gap-3.5 text-[#5A5A5A] font-[300]"
+                style="font-family: 'Open Sans', sans-serif; font-size: 17px;"
+              >
+                5.00/5.00
+                <div class="flex w-[80px]">
+                  <svg
+                    class="w-6 h-6 text-[#efad4e]"
+                    fill="#efad4e"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                    ></path>
+                  </svg>
+                  <svg
+                    class="w-6 h-6 text-[#efad4e]"
+                    fill="#efad4e"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                    ></path>
+                  </svg>
+                  <svg
+                    class="w-6 h-6 text-[#efad4e]"
+                    fill="#efad4e"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                    ></path>
+                  </svg>
+                  <svg
+                    class="w-6 h-6 text-[#efad4e]"
+                    fill="#efad4e"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                    ></path>
+                  </svg>
+                  <svg
+                    class="w-6 h-6 text-[#efad4e]"
+                    fill="#efad4e"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="bg-[#e62e2d] w-[220px] h-[52px] block Aizenosa mt-[30px]"
+              >
+                <a href="#">
+                  <span
+                    style="
+                      display: grid;
+                      place-items: center;
+                      padding: 14.5px 0px;
+                      color: white;
+                      font-size: 14px;
+                    "
+                    >VIEW ON HAR.COM &rightarrow;</span
+                  ></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-row gap-[36px]"
+            style="margin-top: 85px; align-items: center;"
+          >
+            <div class="w-[50%]">
+              <p class="text-[15px]">Houston, TX 77077</p>
+              <p
+                class="text-[37px] font-semibold leading-2"
+                style="font-family: 'Barlow', sans-serif;"
+              >
+                1613 Beaconshire Road
+                <span
+                  class="bg-[#e62e2d] w-[65px] h-[4px] block mb-[20px]"
+                ></span>
+              </p>
+
+              <p
+                class="text-[#5A5A5A] font-[300] leading-[30px] mb-[15px]"
+                style="font-family: 'Open Sans', sans-serif; font-size: 17px;"
+              >
+                “Jenny was very active and communicated almost daily through
+                <br />
+                the entire process – from the initial marketing straight through
+                <br />
+                to closing. She held numerous open houses which within 1 <br />
+                month’s time netted a contract. In particular, she demonstrated
+                <br />
+                her expertise in coordinating and resolving all the issues that
+                <br />
+                came up in negotiation and closing, making everything easy for
+                <br />
+                us. She was a joy to work with and I highly recommend her to
+                <br />
+                anyone looking for a realtor – either to buy or sell a house. ”
+              </p>
+
+              <div
+                class="flex flex-row gap-3.5 text-[#5A5A5A] font-[300]"
+                style="font-family: 'Open Sans', sans-serif; font-size: 17px;"
+              >
+                5.00/5.00
+                <div class="flex w-[80px]">
+                  <svg
+                    class="w-6 h-6 text-[#efad4e]"
+                    fill="#efad4e"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                    ></path>
+                  </svg>
+                  <svg
+                    class="w-6 h-6 text-[#efad4e]"
+                    fill="#efad4e"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                    ></path>
+                  </svg>
+                  <svg
+                    class="w-6 h-6 text-[#efad4e]"
+                    fill="#efad4e"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                    ></path>
+                  </svg>
+                  <svg
+                    class="w-6 h-6 text-[#efad4e]"
+                    fill="#efad4e"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                    ></path>
+                  </svg>
+                  <svg
+                    class="w-6 h-6 text-[#efad4e]"
+                    fill="#efad4e"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="bg-[#e62e2d] w-[220px] h-[52px] block Aizenosa mt-[25px]"
+              >
+                <a href="#">
+                  <span
+                    style="
+                      display: grid;
+                      place-items: center;
+                      padding: 14.5px 0px;
+                      color: white;
+                      font-size: 14px;
+                    "
+                    >VIEW ON HAR.COM &rightarrow;</span
+                  ></a
+                >
+              </div>
+            </div>
+
+            <div
+              class="relative w-[516px]"
+              style="
+                border: 4px solid #cbd2de;
+                position: relative;
+                height: 400px;
+                top: 25px;
+                left: 30px;
+              "
+            >
+              <img
+                class="w-[535px] h-[348px]"
+                src="./assets/images/testi-7.jpeg"
+                style="
+                  position: absolute;
+                  bottom: 75px;
+                  right: 45px;
+                  box-shadow: 64px 64px 160px -40px rgb(0 0 0 / 24%);
+                "
+                alt=""
+              />
+              <div
+                style="
+                  position: absolute;
+                  top: 270px;
+                  background-color: white;
+                  height: 122px;
+                  display: flex;
+                  align-items: center;
+                  padding-left: 45px;
+                  gap: 15px;
+                "
+                class="w-full"
+              >
+                <img
+                  style="width: 39px; height: 40px; border-radius: 50%;"
+                  src="./assets/images/avatar-girl-150x150.png"
+                  alt=""
+                />
+                <span
+                  class="text-[#5A5A5A] font-[300] flex flex-col align-middle justify-center h-full"
+                  ><p>Mary U</p>
+                  <p style="font-size: 14px;">
+                    Comment received on Sep 26, 2020
+                  </p>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-row gap-[110px]"
+            style="
+              margin-top: 85px;
+              align-items: center;
+              justify-content: space-between;
+            "
+          >
+            <div
+              class="relative w-[535px]"
+              style="
+                border: 4px solid #cbd2de;
+                position: relative;
+                height: 353px;
+                top: 25px;
+                left: 30px;
+              "
+            >
+              <img
+                class="w-[522px] h-[330px]"
+                src="./assets/images/testi-9.jpeg"
+                style="
+                  position: absolute;
+                  bottom: 60px;
+                  right: 32px;
+                  box-shadow: 64px 64px 160px -40px rgb(0 0 0 / 24%);
+                "
+                alt=""
+              />
+              <div
+                style="
+                  position: absolute;
+                  bottom: 0px;
+                  left: 0px;
+                  background-color: white;
+                  height: 115px;
+                  display: flex;
+                  align-items: center;
+                  padding-left: 45px;
+                  gap: 15px;
+                "
+                class="w-full"
+              >
+                <img
+                  style="width: 39px; height: 40px; border-radius: 50%;"
+                  src="./assets/images/avatar-boy-150x150.jpeg"
+                  alt=""
+                />
+                <span
+                  class="text-[#5A5A5A] font-[300] flex flex-col align-middle justify-center h-full"
+                  ><p>Michele W</p>
+                  <p style="font-size: 14px;">
+                    Comment received on Sep 15, 2017
+                  </p>
+                </span>
+              </div>
+            </div>
+
+            <div class="w-[50%] pr-[10px]">
+              <p class="text-[15px]">Houston, TX 77027</p>
+              <p
+                class="text-[37px] font-semibold leading-2"
+                style="font-family: 'Barlow', sans-serif;"
+              >
+                4645 Wild Indigo #381
+                <span
+                  class="bg-[#e62e2d] w-[65px] h-[4px] block mb-[20px]"
+                ></span>
+              </p>
+
+              <p
+                class="text-[#5A5A5A] font-[300] leading-[30px] mb-[15px]"
+                style="font-family: 'Open Sans', sans-serif; font-size: 17px;"
+              >
+                “Jenny was very prompt with her replies and quickly made
+                <br />'' the appointment to show me the place. She was very
+                nice, polite
+                <br />
+                and easy to work with”
+              </p>
+              <div
+                class="flex flex-row gap-3.5 text-[#5A5A5A] font-[300]"
+                style="font-family: 'Open Sans', sans-serif; font-size: 17px;"
+              >
+                5.00/5.00
+                <div class="flex w-[80px]">
+                  <svg
+                    class="w-6 h-6 text-[#efad4e]"
+                    fill="#efad4e"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                    ></path>
+                  </svg>
+                  <svg
+                    class="w-6 h-6 text-[#efad4e]"
+                    fill="#efad4e"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                    ></path>
+                  </svg>
+                  <svg
+                    class="w-6 h-6 text-[#efad4e]"
+                    fill="#efad4e"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                    ></path>
+                  </svg>
+                  <svg
+                    class="w-6 h-6 text-[#efad4e]"
+                    fill="#efad4e"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                    ></path>
+                  </svg>
+                  <svg
+                    class="w-6 h-6 text-[#efad4e]"
+                    fill="#efad4e"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="bg-[#e62e2d] w-[220px] h-[52px] block Aizenosa mt-[30px]"
+              >
+                <a href="#">
+                  <span
+                    style="
+                      display: grid;
+                      place-items: center;
+                      padding: 14.5px 0px;
+                      color: white;
+                      font-size: 14px;
+                    "
+                    >VIEW ON HAR.COM &rightarrow;</span
+                  ></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="service">
+        <div class="inner"></div>
+        <div
+          class="relative flex flex-col place-items-center place-content-center gap-10 p-5 md:p-10"
+        >
+          <div>
+            <span class="bg-[#e62e2d] w-[65px] h-[4px] block"></span>
+          </div>
+          <div>
+            <p
+              class="text-[white] text-[37px] font-semibold leading-2"
+              style="font-family: 'Barlow', sans-serif;"
+            >
+              We Provide The Best Service In Industry​
+            </p>
+          </div>
+          <div>
+            <p
+              class="text-[#cad2de] font-[300] leading-[30px] relative"
+              style="font-family: 'Open Sans', sans-serif; font-size: 17px;"
+            >
+              Get in touch with us today and avail off our World-class real
+              estate services
+            </p>
+          </div>
+          <div class="bg-[#e62e2d] w-max m-auto block Aizenosa relative">
+            <a href="./contact.html">
+              <span
+                style="
+                  display: grid;
+                  place-items: center;
+                  color: white;
+                  font-size: 14px;
+                "
+                class="px-8 py-5"
+                ><p class="flex flex-col">
+                  Contact Us Today &rightarrow;
+                </p></span
+              >
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--Footer by Fortune-->
+    <footer class="bg-[#19212d]">
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 items-center p-10 border-b border-b-black justify-center"
+      >
+        <div class="space-y-5 px-0 mb-10">
+          <div class="w-full">
+            <img
+              class="w-[100px] rounded-full mx-[40px]"
+              src="./assets/images/logo-small-200.jpg"
+              alt=""
+            />
+          </div>
+
+          <p class="max-w-sm text-slate-200 px-0 mb-5 md:px-10 md:mb-0">
+            We offer one stop customized Strategies and Services Plans tailored
+            to each client's individual needs in both residential and commercial
+            real estate
+          </p>
+
+          <!-- Social Icons -->
+          <div
+            class="flex items-center md:justify-center text-white text-[25px] relative flex-row gap-3 pb-5"
+          >
+            <a href="">
+              <i
+                class="fab fa-facebook bg-red-600 p-2 rounded-full hover: bg-white hover:text-blue-500"
+                aria-hidden="true"
+              ></i>
+            </a>
+            <a href="">
+              <i
+                class="fab fa-twitter-square bg-red-600 p-2 rounded-full hover: bg-white hover:text-blue-500"
+                aria-hidden="true"
+              ></i>
+            </a>
+            <a href="">
+              <i
+                class="fab fa-youtube bg-red-600 p-2 rounded-full hover: bg-white hover:text-blue-500"
+                aria-hidden="true"
+              ></i>
+            </a>
+            <a href="">
+              <i
+                class="fab fa-instagram bg-red-600 p-2 rounded-full hover: bg-white hover:text-blue-500"
+                aria-hidden="true"
+              ></i>
+            </a>
+          </div>
+        </div>
+        <div
+          class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 col-span-3"
+        >
+          <div class="space-y-3 text-white">
+            <div>
+              <h1 class="text-xl font-medium">Our Company</h1>
+            </div>
+
+            <div class="text-slate-200">
+              <p>About Company</p>
+              <p>Contact</p>
+              <a href="./policy.html"><p>Privacy Policy</p></a>
+              <p>Terms and Conditions</p>
+            </div>
+          </div>
+          <div class="space-y-3 text-white">
+            <div>
+              <h1 class="font-medium text-xl">Our Services</h1>
+            </div>
+
+            <div class="text-slate-200">
+              <p>News</p>
+              <p>Video Production</p>
+              <p>Home Finding</p>
+              <p>Search Schools</p>
+            </div>
+          </div>
+          <div class="space-y-5 text-white">
+            <div>
+              <h1 class="font-lg text-lg">Contact details</h1>
+            </div>
+            <div class="text-slate-200">
+              <p>2925 Richmond Ave, Ste 1200</p>
+              <p>Houston, Tx 77098</p>
+              <p>(281)451-0185</p>
+              <p>jennywangrealestate@gmail.com</p>
+            </div>
+          </div>
+
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 gap-5 md:block md:flex-row"
+          >
+            <div class="text-white text-sm">
+              <p>Texas Real Estate Commission Consumer</p>
+              <p>Protection Notice</p>
+            </div>
+
+            <div class="text-white text-sm">
+              <p>Texas Real Estate Commission Consumer</p>
+              <p>Protection Notice</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="flex flex-col md:flex-row justify-between items-center p-4 lg:p-[30px] align-center px-10 md:px-[90px] text-xs"
+      >
+        <p class="text-slate-200 align-center">
+          Copyright &copy; 2022 JWang Properties
+        </p>
+        <p class="text-slate-200 align-center">Powered by jwang Properties</p>
+      </div>
+    </footer>
+  </body>
+</html>

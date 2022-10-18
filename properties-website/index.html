@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Properties website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./assets/css/style.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="/dist/output.css" rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  </head>
+  <body>
+    <!--Header-->
+    <header class="relative">
+      <div
+        class="main_header absolute z-50 top-0 right-0 left-0 w-full bg-transparent border-b text-white font-semibold border-b-gray-50 flex justify-between align-middle items-center p-5 px-10 sm:px-20 md:px-32"
+      >
+        <a class="text-xl font-semibold" href="./index.html">
+          <img
+            class="w-[90px] h-[90px] object-contain mx-auto"
+            src="./assets/images/real-logo.png"
+            alt="Logo"
+          />
+        </a>
+
+        <nav class="hidden md:block">
+          <ul>
+            <li class="font-[600] leading-[40px] cursor-pointer">
+              <a href="./index.html">Home</a>
+            </li>
+
+            <!-- About -->
+            <li class="group font-[600] leading-[40px] relative cursor-pointer">
+              <div class="flex gap-2 align-middle justify-center items-center">
+                <span class="group-hover:text-blue-500">About</span>
+                <svg
+                  class="w-6 h-6 p-1 group-hover:text-blue-500 group-hover:rotate-180 transition duration-200 group-hover:duration-200"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </div>
+
+              <!-- Sub Menu -->
+              <div
+                class="hidden group-hover:block h-max absolute top-[90%] bg-white text-black p-0 -left-5 w-[250px] border border-gray-200"
+              >
+                <ul class="flex flex-col">
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="./about.html" class="font-[600]"
+                      >About Jwang Properties</a
+                    >
+                  </li>
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="./story.html" class="font-[600]">My Story</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <!-- Search -->
+            <li class="group font-[600] leading-[40px] relative cursor-pointer">
+              <div class="flex gap-2 align-middle justify-center items-center">
+                <span class="group-hover:text-blue-500">Search</span>
+                <svg
+                  class="w-6 h-6 p-1 group-hover:text-blue-500 group-hover:rotate-180 transition duration-200 group-hover:duration-200"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </div>
+
+              <!-- Sub Menu -->
+              <div
+                class="hidden group-hover:block h-max absolute top-[90%] bg-white text-black p-0 -left-5 w-[250px] border border-gray-200"
+              >
+                <ul class="flex flex-col">
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="#" class="font-[600]">Search For Homes</a>
+                  </li>
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="#" class="font-[600]">Search With Maps</a>
+                  </li>
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="#" class="font-[600]">Search Neigbours</a>
+                  </li>
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="#" class="font-[600]">Search Schools</a>
+                  </li>
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="#" class="font-[600]">Commercial Properties</a>
+                  </li>
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="#" class="font-[600]"
+                      >Search International Listings</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <!-- Listings -->
+            <li class="group font-[600] leading-[40px] relative cursor-pointer">
+              <div class="flex gap-2 align-middle justify-center items-center">
+                <span class="group-hover:text-blue-500">Listings</span>
+                <svg
+                  class="w-6 h-6 p-1 group-hover:text-blue-500 group-hover:rotate-180 transition duration-200 group-hover:duration-200"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </div>
+
+              <!-- Sub Menu -->
+              <div
+                class="hidden group-hover:block h-max absolute top-[90%] bg-white text-black p-0 -left-5 w-[250px] border border-gray-200"
+              >
+                <ul class="flex flex-col">
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="./listings.html" class="font-[600]"
+                      >All Listings</a
+                    >
+                  </li>
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="./solid-listings.html" class="font-[600]"
+                      >Solid Listings</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="font-[600] leading-[40px] cursor-pointer">
+              <a href="./OurAgent.html">Meet Our Agents</a>
+            </li>
+            <li class="font-[600] leading-[40px] cursor-pointer">
+              <a href="./testimonials.html">Testimonials</a>
+            </li>
+
+            <li class="font-[600] leading-[40px] cursor-pointer">
+              <a href="./contact.html">Contact Us</a>
+            </li>
+            <li class="font-[600] leading-[40px] cursor-pointer">
+              <a href="./login.html">LOGIN</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Header Menu Bar -->
+        <span class="text-black show_aside block md:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-12 p-2 h-12 text-white"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </span>
+      </div>
+
+      <!-- Hero -->
+      <div
+        class="hero relative h-screen top-0 bg-[url('./assets/images/hero-section.jpg')]"
+      >
+        <div
+          class="flex flex-col justify-center align-middle items-center h-full gap-10 w-full px-10 md:px-0 max-w-full md:max-w-[800px] m-auto"
+        >
+          <h2
+            class="text-white font-[600] text-[50px] sm:text-[60px] md:text-[70px] leading-none md:leading-[30px] capitalize"
+          >
+            Find your perfect Home
+          </h2>
+
+          <p
+            style="font-family: 'Open Sans', sans-serif;"
+            class="text-white text-[18px] leading-[33px] text-left md:text-center"
+          >
+            JWang provides a competitive edge when it comes to buying in
+            Austin’s aggressive market. Representing buyers is his fiduciary
+            duty to find a long-term solution for his clients
+          </p>
+
+          <!-- Search Form -->
+          <form
+            action=""
+            class="flex gap-3 align-center itemx-center w-full"
+            style="font-family: 'Open Sans', sans-serif;"
+          >
+            <input
+              type="search"
+              name="search"
+              placeholder="Enter Address or MLS# or Zip Code"
+              size="30"
+              class="bg-white rounded border border-gray-50 w-full px-10 font-[400] text-slate-900 placeholder:text-slate-900"
+            />
+            <button
+              class="bg-red-600 px-10 py-5 text-white hover:bg-[#ff702d] transition-all duration-200 hover:duration-200"
+            >
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- Our Family By Toyosi -->
+      <section class="our_family py-10 px-10 md:px-32">
+        <div class="our_heading w-full md:w-[60%]">
+          <div class="h-full flex justify-center align-middle flex-col gap-5">
+            <h1
+              class="font-medium text-[40px] leading-[40px] text-left relative"
+            >
+              Welcome To The JWang
+              <span
+                class="border-b-[3px] text-[#1a1a1a] border-b-red-500 w-max pb-5 block relative"
+                style="font-family: 'Barlow', sans-serif;"
+                >Family</span
+              >
+            </h1>
+            <h2
+              class="text-left text-[#1a1a1a] font-[600] border-b-red-500 pb-5 leading-[40px] text-[24px]"
+              style="font-family: 'Barlow', sans-serif;"
+            >
+              Find Your Perfect Home
+            </h2>
+            <p
+              class="text-left font-[400] text-[16px] text-[#5a5a5a] leading-[30px]"
+              style="font-family: 'Open Sans', sans-serif;"
+            >
+              JWang Properties is a boutique Realty with a personal touch.
+              Through our innovative system and custom video production, JWang
+              Properties advances REALTORS to be the Superstars to serve our
+              clients, industry and communities. We offer one stop customized
+              Strategies and Service Plans tailored to each client’s individual
+              needs in both residential and commercial real estate. We are a
+              strong team and our mission is to bring value and joy to others
+              with our knowledge, creativity and expertise. As a broker, Jenny
+              devotes herself to serve clients with her wells of knowledge and
+              passion, in both residential and commercial real estate. Because
+              of her in-depth relationships with the industry and dynamic
+              networks, she offers enormous resources to support her agents and
+              better serve her clients.
+            </p>
+          </div>
+        </div>
+        <div class="family-image relative hidden md:block">
+          <img
+            src="https://jwangproperties.com/wp-content/uploads/elementor/thumbs/jennywang-headshot-pv1y0lmf73s90hag4j0fhn18y0uf0foaxocn15zv3o.jpeg"
+            alt="img"
+            class="p-5"
+          />
+        </div>
+
+        <style>
+          .family-image img::after {
+            position: absolute;
+            top: -10px;
+            border: 3px solid #ccc;
+            height: 700px;
+            content: "";
+          }
+        </style>
+      </section>
+
+      <section class="px-10 md:px-32 CTA bg-[url('./assets/images/roof.jpg')]">
+        <div class="content flex place-items-center flex-col gap-5">
+          <h2>Read To Sell Your Home?</h2>
+          <p>
+            With more control and lesser paperwork, we help you sell your house
+            in no time with great ease while we take care of all the hassle.
+          </p>
+          <button class="bg-red-600 px-7 py-3 text-white m-auto">
+            Book an Appointment
+          </button>
+        </div>
+      </section>
+
+      <!--Why choose us by Fortune-->
+      <section
+        class="block text-[16px] leading-[29.7143px] text-[#5a5a5a] w-full mt-10 transform-none items-center align-center px-10"
+      >
+        <div
+          class="flex flex-col md:flex-row justify-center items-center w-full"
+        >
+          <div
+            class="flex font-serif font-sans text-[16px] leading-[7143px] no-underline decoration-none tracking-[0px] bg-[#ffffff] text-[#5a5a5a] w-full md:w-[50%] min-h-[1px] relative top-0 buttom-0 right-0 left-0 transform-none transition-all ease-0 duration-0 outline-[rgb(255 0 0)] box-border leading-3"
+          >
+            <span
+              class="relative hidden md:grid grid-cols-1 place-items-center text-[16px] pt-20 tracking-[0px] text-[#5a5a5a] h-max w-full md:w-[80%] lg:w-[65%] mx-auto relative top-0 bottom-0 right-0 left-0 box-border border-4 outline-[rgb(255 0 0)] transform-none"
+              style="height: 450.5px; margin: auto;"
+            >
+              <img
+                class="absolute inline-block items-center align-center tracking-[0px] align-middle h-[195px] h-[382.195px] transform-none leading-3 top-[50px] -left-[60px] right-0 object-contain"
+                src="./assets/images/group.jpg"
+                alt="our-team"
+              />
+            </span>
+          </div>
+          <div
+            class="w-full md:w-[50%] top-0 left-0 buttom-0 right-0 leading-[29.7143px] text-[16px] tracking-[0px] bg-white text-[#5a5a5a] relative flex justify-center place-items-center items-center p-2"
+          >
+            <div
+              class="text-[16px] leading-[29.7143px] tracking-[0px] bg-white text-[#5a5a5a] w-full min-h-auto relative top-0 left-0 right-0 buttom-0 flex"
+            >
+              <div class="gap-8 space-y-8 pt-20">
+                <h1
+                  class="uppercase font-serif font-sans text-[40px] font-[600] leading-[40px] capitalize tracking-[0px] text-[#1a1a1a] block clear-both"
+                  style="font-family: 'Barlow', sans-serif;"
+                >
+                  <span
+                    class="border-b-[3px] text-[#1a1a1a] border-b-red-500 w-max pb-5 relative"
+                    >Why</span
+                  >
+                  choose us ?
+                </h1>
+                <p
+                  class="font-sans font-serif text-[16px] leading-[29.7143px] text-[#5A5A5A] w-full block transform-none"
+                >
+                  With our multidisciplined talent on board, we ensure that each
+                  of our clients get through the hassle of purchasing and
+                  selling their property smoothly.
+                </p>
+                <div
+                  class="grid grid-cols-1 md:grid-cols-2 font-sans font-serif gap-10 md:gap-5 relative"
+                >
+                  <!-- Card -->
+                  <div class="flex gap-5 relative">
+                    <span
+                      class="text-red-500 h-[32px] w-[32px] relative left-0 right-0 top-0 buttom-0 font-[600] text-[32px]"
+                      ><i class="fa-sharp fa-solid fa-house"></i
+                    ></span>
+
+                    <div>
+                      <h1
+                        class="text-[20px] font-[600] leading-[32px] text-left capitalize tracking-[0px] text-[#1A1A1A] bg-[0% 0%] h-auto w-auto inline"
+                        style="font-family: 'Barlow', sans-serif;"
+                      >
+                        Wide Range Of <br />
+                        Properties
+                      </h1>
+
+                      <p
+                        class="font-serif text-[16px] leading-[29.7143px] text-left tracking-[0px] text-[#5A5A5A] bg-[0% 0%] block"
+                        style="font-family: 'Open Sans', sans-serif;"
+                      >
+                        Surf through our wide range of properties.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Card -->
+                  <div class="flex gap-5 relative">
+                    <span
+                      class="text-red-500 h-[32px] w-[32px] relative left-0 right-0 top-0 buttom-0 font-[600] text-[32px]"
+                      ><i class="fa-solid fa-pen-to-square"></i
+                    ></span>
+                    <div>
+                      <h1
+                        class="text-[20px] font-[600] leading-[32px] text-left capitalize tracking-[0px] text-[#1A1A1A] bg-[0% 0%] h-auto w-auto inline"
+                        style="font-family: 'Barlow', sans-serif;"
+                      >
+                        Financing Made Easy
+                      </h1>
+
+                      <p
+                        class="font-sans font-serif text-[16px] leading-[29.7143px] text-left tracking-[0px] text-[#5A5A5A] bg-[0% 0%] block"
+                        style="font-family: 'Open Sans', sans-serif;"
+                      >
+                        Just book a call with us and get your favorite property
+                        <br />
+                        financed without hassle.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Card -->
+                  <div class="flex gap-5 relative">
+                    <span
+                      class="text-red-500 h-[32px] w-[32px] relative left-0 right-0 top-0 buttom-0 font-[600] text-[32px]"
+                      ><i class="fa-solid fa-handshake-angle"></i
+                    ></span>
+                    <div>
+                      <h1
+                        class="text-[20px] font-[600] leading-[32px] text-left capitalize tracking-[0px] text-[#1A1A1A] w-auto inline"
+                        style="font-family: 'Barlow', sans-serif;"
+                      >
+                        Trusted By Thousands
+                      </h1>
+                      <p
+                        class="font-sans font-serif text-[16px] leading-[29.7143px] text-left tracking-[0px] text-[#5A5A5A] w-full block"
+                      >
+                        We’ve maintained our position as one of the most
+                        reliable sources.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Card -->
+                  <div class="flex gap-5 relative">
+                    <span
+                      class="text-red-500 h-[32px] w-[32px] relative left-0 right-0 top-0 buttom-0 font-[600] text-[32px]"
+                      ><i class="fa-sharp fa-solid fa-bell"></i
+                    ></span>
+                    <div>
+                      <h1
+                        class="text-[20px] font-[600] leading-[32px] text-left capitalize tracking-[0px] text-[#1A1A1A] bg-[0% 0%] h-auto w-auto inline"
+                        style="font-family: 'Barlow', sans-serif;"
+                      >
+                        Get Important <br />
+                        Notifications
+                      </h1>
+
+                      <p
+                        class="font-sans font-serif text-[16px] leading-[29.7143px] text-left tracking-[0px] text-[#5A5A5A] w-full block"
+                      >
+                        We keep you updated with activities related to your
+                        <br />
+                        property.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Card -->
+                  <div class="flex gap-5 relative">
+                    <span
+                      class="text-red-500 h-[32px] w-[32px] relative left-0 right-0 top-0 buttom-0 font-[600] text-[32px]"
+                      ><i class="fa-regular fa-hourglass"></i
+                    ></span>
+                    <div>
+                      <h1
+                        class="text-[20px] font-[600] leading-[32px] text-left capitalize tracking-[0px] text-[#1A1A1A] w-full inline"
+                        style="font-family: 'Barlow', sans-serif;"
+                      >
+                        Transparency
+                      </h1>
+
+                      <p
+                        class="font-sans font-serif text-[16px] leading-[29.7143px] text-left tracking-[0px] text-[#5A5A5A] w-full block"
+                      >
+                        We help you sell your home as is without any hidden
+                        surprises.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Card -->
+                  <div class="flex gap-5 relative">
+                    <span
+                      class="text-red-500 h-[32px] w-[32px] relative left-0 right-0 top-0 buttom-0 font-[600] text-[32px]"
+                      ><i class="fa-solid fa-magnifying-glass-location"></i
+                    ></span>
+                    <div>
+                      <h1
+                        class="text-[20px] font-[600] leading-[32px] text-left capitalize tracking-[0px] text-[#1A1A1A] bg-[0% 0%] h-auto w-auto inline"
+                        style="font-family: 'Barlow', sans-serif;"
+                      >
+                        Near By Me
+                      </h1>
+
+                      <p
+                        class="font-sans font-serif text-[16px] leading-[29.7143px] text-left tracking-[0px] text-[#5A5A5A] w-full block"
+                      >
+                        Stay updated with all the latest news about property
+                        near your location.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Clients by Aizenosa-->
+      <section class="py-20 px-10 md:px-32">
+        <div class="flex flex-col md:flex-row justify-between gap-10">
+          <div class="gap-10 flex-col w-full md:w-[50%] flex">
+            <h2
+              class="text-[40px] font-semibold leading-[80px]"
+              style="font-family: 'Barlow', sans-serif;"
+            >
+              What Our Clients Say
+              <span class="bg-[#e62e2d] w-[65px] h-[4px] block"></span>
+            </h2>
+
+            <!-- Stars ratings -->
+            <div class="flex flex-row gap-3.5">
+              4.96/5
+              <div class="flex w-[80px]">
+                <svg
+                  class="w-6 h-6 text-[#efad4e]"
+                  fill="#efad4e"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                  ></path>
+                </svg>
+                <svg
+                  class="w-6 h-6 text-[#efad4e]"
+                  fill="#efad4e"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                  ></path>
+                </svg>
+                <svg
+                  class="w-6 h-6 text-[#efad4e]"
+                  fill="#efad4e"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                  ></path>
+                </svg>
+                <svg
+                  class="w-6 h-6 text-[#efad4e]"
+                  fill="#efad4e"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                  ></path>
+                </svg>
+                <svg
+                  class="w-6 h-6 text-[#efad4e]"
+                  fill="#efad4e"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+
+            <div
+              class="text font-[400] leading-[30px] text-[#5a5a5a] text-[16px]"
+              style="font-family: 'Open Sans', sans-serif;"
+            >
+              <p>
+                Being a credible resource, we’re proud to showcase what our
+                <br />
+                clients have to say about us.
+              </p>
+            </div>
+
+            <section
+              class="grid grid-cols-2 gap-10 p-2 shadow-2xl px-0 place-items-center"
+            >
+              <div class="wrapper_image relative">
+                <img
+                  src="https://jwangproperties.com/wp-content/uploads/2021/11/Flo-Bell.jpeg"
+                  class="attachment-full size-full"
+                  alt=""
+                  loading="lazy"
+                  srcset="
+                    https://jwangproperties.com/wp-content/uploads/2021/11/Flo-Bell.jpeg         720w,
+                    https://jwangproperties.com/wp-content/uploads/2021/11/Flo-Bell-225x300.jpeg 225w
+                  "
+                />
+              </div>
+              <div class="block">
+                <div
+                  class="text-[#5a5a5a] leading-[30px] text-[16px] font-[400]"
+                  style="font-family: 'Opens sans', sans-serif;"
+                >
+                  <div>
+                    <i
+                      class="text-4xl font-900 leading-[24px] text-[#e62e2d] fa-solid fa-quote-left"
+                    ></i>
+                  </div>
+                  <p class="mb-5">
+                    “Jenny Wang is a fantastic Realtor. She is patient and
+                    listened to my concerns and needs. She did an amazing job
+                    showcasing my property. It wasn’t on the market long".
+                  </p>
+
+                  <p
+                    class="text-[#5a5a5a] text-[17px] leading-[24px] font-[300]"
+                  >
+                    Florence B
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <div
+              class="hidden md:block bg-[#e62e2d] w-[120px] h-[50px] block Aizenosa"
+            >
+              <a href="./testimonials.html"
+                ><span
+                  style="
+                    display: grid;
+                    place-items: center;
+                    padding: 14.5px 0px;
+                    color: white;
+                    font-size: 14px;
+                  "
+                  >VIEW ALL</span
+                ></a
+              >
+            </div>
+          </div>
+
+          <div class="w-full md:w-[50%]">
+            <section
+              class="grid grid-cols-2 gap-10 p-7 pr-8 shadow-2xl px-0 place-items-center mb-10"
+            >
+              <div class="wrapper_image relative">
+                <img src="./assets/images/Polo-Garcia.jpeg" alt="" />
+              </div>
+              <div class="">
+                <div
+                  class="text-[#5a5a5a] leading-[30px] text-[16px] font-[400]"
+                  style="font-family: 'Opens sans', sans-serif;"
+                >
+                  <div>
+                    <i
+                      class="text-4xl font-900 leading-[24px] text-[#e62e2d] fa-solid fa-quote-left"
+                    ></i>
+                  </div>
+                  <p class="mb-5">
+                    “Jenny was very helpful and professional during the whole
+                    transaction. I really recommend her if you need to buy or
+                    sell Properties in the Houston area. ”
+                  </p>
+
+                  <p
+                    class="text-[#5a5a5a] text-[17px] leading-[24px] font-[300]"
+                  >
+                    Polo G
+                  </p>
+                </div>
+              </div>
+            </section>
+            <section
+              class="grid grid-cols-2 gap-10 pr-8 shadow-2xl px-0 place-items-center"
+            >
+              <div class="wrapper_image relative">
+                <img src="./assets/images/testimonial-image.jpg" alt="" />
+              </div>
+              <div>
+                <div
+                  class="text-[#5a5a5a] leading-[30px] text-[16px] font-[400]"
+                  style="font-family: 'Opens sans', sans-serif;"
+                >
+                  <div>
+                    <i
+                      class="text-4xl font-900 leading-[24px] text-[#e62e2d] fa-solid fa-quote-left"
+                    ></i>
+                  </div>
+                  <p class="mb-5">
+                    “Jenny was very prompt with her replies and quickly made the
+                    appointment to show me the place. She was very nice, polite
+                    and easy to work with”
+                  </p>
+
+                  <p
+                    class="text-[#5a5a5a] text-[17px] leading-[24px] font-[300]"
+                  >
+                    Michele W
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <div
+              class="bg-[#e62e2d] w-[120px] h-[50px] Aizenosa mt-5 block md:hidden"
+            >
+              <a href="./testimonials.html"
+                ><span
+                  style="
+                    display: grid;
+                    place-items: center;
+                    padding: 14.5px 0px;
+                    color: white;
+                    font-size: 14px;
+                  "
+                  >VIEW ALL</span
+                ></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="CTA bg-[url('./assets/images/home_bg.jpeg')] bg-fixed bg-blend-normal bg-contain bg-repeat px-10 md:px-28 py-20"
+      >
+        <div class="grid grid-cols-1 md:grid-cols-2 place-items-center gap-10">
+          <!-- Card -->
+          <div class="bg-red-600 p-10 py-14 flex justify-between gap-5 w-full">
+            <img
+              src="./assets/images/search-white.png"
+              alt="Search"
+              class="h-16 w-16"
+            />
+            <div class="flex flex-col gap-5">
+              <span
+                class="block relative text-white text-[24px] leading-[36px] font-[600]"
+                style="font-family: 'Barlow', sans-serif;"
+                >Looking For Property Valuation?</span
+              >
+              <span
+                class="block relative text-white text-[16px] leading-[25px]"
+                style="font-family: 'Open Sans', sans-serif;"
+                >Evaluate the estimated price of your property today.</span
+              >
+              <a
+                href="./find_now.html"
+                class="bg-white w-max p-8 py-3 text-red-700 hover:text-black hover:duration-200 transition-all hover:bg-slate-200 hover:border-white border border-red-700"
+                >Find Now</a
+              >
+            </div>
+          </div>
+          <div class="bg-red-600 p-10 py-14 flex justify-between gap-5 w-full">
+            <img
+              src="./assets/images/sale-home.png"
+              alt="Search"
+              class="h-16 w-16"
+            />
+            <div class="flex flex-col gap-5">
+              <span
+                class="block relative text-white text-[24px] leading-[36px] font-[600]"
+                style="font-family: 'Barlow', sans-serif;"
+                >Want To Sell Your Home?</span
+              >
+              <span
+                class="block relative text-white text-[16px] leading-[25px]"
+                style="font-family: 'Open Sans', sans-serif;"
+                >Get your home listed for sale and get paid in no time.</span
+              >
+              <a
+                href="./find_now.html"
+                class="bg-white w-max p-8 py-3 text-red-700 hover:text-black hover:duration-200 transition-all hover:bg-slate-200 hover:border-white border border-red-700"
+                >Find Now</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Expert Team -->
+      <section class="py-20 px-10 md:px-40">
+        <div class="w-full md:w-1/2">
+          <h2
+            class="text-[40px] font-semibold leading-[80px]"
+            style="font-family: 'Barlow', sans-serif;"
+          >
+            Our Expert Team
+            <span class="bg-[#e62e2d] w-[65px] h-[4px] block"></span>
+          </h2>
+
+          <div
+            class="text font-[400] leading-[30px] text-[#5a5a5a] text-[16px] mt-5 block relative"
+            style="font-family: 'Open Sans', sans-serif;"
+          >
+            <p>
+              Through our innovated system, we offer customized service to
+              tailor each client’s individual needs. Our expert team is ready to
+              bring you value and joy during this process, whether it’s about
+              real estate selling, buying or leasing, residential and commercial
+            </p>
+          </div>
+        </div>
+
+        <!-- Team Inner Container -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-20 place-items-center place-content-center p-10"
+        >
+          <!-- Card -->
+          <div class="flex flex-col gap-2">
+            <img
+              src="./assets/images/team-1-pics.jpeg"
+              alt="team_name"
+              class="mb-3"
+            />
+            <span
+              class="block relative text-center font-semibold text-[24px] leading-[36px]"
+              style="font-family: 'Barlow', sans-serif;"
+              >Jenny Wang</span
+            >
+            <span
+              class="block relative text-center font-[400] text-[16px] leading-[30px]"
+              style="font-family: 'Open Sans', sans-serif;"
+              >Broker / Owner</span
+            >
+          </div>
+          <!-- Card -->
+          <div class="flex flex-col gap-2">
+            <img
+              src="./assets/images/team-2-pics.jpeg"
+              alt="team_name"
+              class="mb-3"
+            />
+            <span
+              class="block relative text-center font-semibold text-[24px] leading-[36px]"
+              style="font-family: 'Barlow', sans-serif;"
+              >Chianti Washington</span
+            >
+            <span
+              class="block relative text-center font-[400] text-[16px] leading-[30px]"
+              style="font-family: 'Open Sans', sans-serif;"
+              >Chief Administrative assistant</span
+            >
+          </div>
+        </div>
+
+        <!-- View all Button -->
+        <a
+          href="./view-all.html"
+          class="bg-red-600 hover:bg-[#ff702d] py-4 px-8 text-white text-lg w-max block relative m-auto transition-background hover:duration-200 duration-150"
+          >View all</a
+        >
+      </section>
+    </main>
+
+    <!--Footer by Fortune-->
+    <footer class="bg-[#19212d]">
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 items-center p-10 border-b border-b-black justify-center"
+      >
+        <div class="space-y-5 px-0 mb-10">
+          <div class="w-full">
+            <img
+              class="w-[100px] rounded-full mx-[40px]"
+              src="./assets/images/logo-small-200.jpg"
+              alt=""
+            />
+          </div>
+
+          <p class="max-w-sm text-slate-200 px-0 mb-5 md:px-10 md:mb-0">
+            We offer one stop customized Strategies and Services Plans tailored
+            to each client's individual needs in both residential and commercial
+            real estate
+          </p>
+
+          <!-- Social Icons -->
+          <div
+            class="flex items-center md:justify-center text-white text-[25px] relative flex-row gap-3 pb-5"
+          >
+            <a href="">
+              <i
+                class="fab fa-facebook bg-red-600 p-2 rounded-full hover: bg-white hover:text-blue-500"
+                aria-hidden="true"
+              ></i>
+            </a>
+            <a href="">
+              <i
+                class="fab fa-twitter-square bg-red-600 p-2 rounded-full hover: bg-white hover:text-blue-500"
+                aria-hidden="true"
+              ></i>
+            </a>
+            <a href="">
+              <i
+                class="fab fa-youtube bg-red-600 p-2 rounded-full hover: bg-white hover:text-blue-500"
+                aria-hidden="true"
+              ></i>
+            </a>
+            <a href="">
+              <i
+                class="fab fa-instagram bg-red-600 p-2 rounded-full hover: bg-white hover:text-blue-500"
+                aria-hidden="true"
+              ></i>
+            </a>
+          </div>
+        </div>
+        <div
+          class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 col-span-3"
+        >
+          <div class="space-y-3 text-white">
+            <div>
+              <h1 class="text-xl font-medium">Our Company</h1>
+            </div>
+
+            <div class="text-slate-200">
+              <p>About Company</p>
+              <p>Contact</p>
+              <a href="./policy.html"><p>Privacy Policy</p></a>
+              <p>Terms and Conditions</p>
+            </div>
+          </div>
+          <div class="space-y-3 text-white">
+            <div>
+              <h1 class="font-medium text-xl">Our Services</h1>
+            </div>
+
+            <div class="text-slate-200">
+              <p>News</p>
+              <p>Video Production</p>
+              <p>Home Finding</p>
+              <p>Search Schools</p>
+            </div>
+          </div>
+          <div class="space-y-5 text-white">
+            <div>
+              <h1 class="font-lg text-lg">Contact details</h1>
+            </div>
+            <div class="text-slate-200">
+              <p>2925 Richmond Ave, Ste 1200</p>
+              <p>Houston, Tx 77098</p>
+              <p>(281)451-0185</p>
+              <p>jennywangrealestate@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 gap-5 md:block md:flex-row">
+            <div class="text-white text-sm">
+              <p>Texas Real Estate Commission Consumer</p>
+              <p>Protection Notice</p>
+            </div>
+
+            <div class="text-white text-sm">
+              <p>Texas Real Estate Commission Consumer</p>
+              <p>Protection Notice</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="flex flex-col md:flex-row justify-between items-center p-4 lg:p-[30px] align-center px-10 md:px-[90px] text-xs"
+      >
+        <p class="text-slate-200 align-center">
+          Copyright &copy; 2022 JWang Properties
+        </p>
+        <p class="text-slate-200 align-center">Powered by jwang Properties</p>
+      </div>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

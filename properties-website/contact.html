@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Contact us jwang Properties</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-200">
+    <!--Header-->
+    <header class="relative">
+      <div
+        class="main_header absolute z-50 top-0 right-0 left-0 w-full bg-transparent border-b text-white font-semibold border-b-gray-50 flex justify-between align-middle items-center p-5 px-10 sm:px-20 md:px-32"
+      >
+        <a class="text-xl font-semibold" href="./index.html">
+          <img
+            class="w-[90px] h-[90px] object-contain mx-auto"
+            src="./assets/images/real-logo.png"
+            alt="Logo"
+          />
+        </a>
+
+        <nav class="hidden md:block">
+          <ul>
+            <li class="font-[600] leading-[40px] cursor-pointer">
+              <a href="./index.html">Home</a>
+            </li>
+
+            <!-- About -->
+            <li class="group font-[600] leading-[40px] relative cursor-pointer">
+              <div class="flex gap-2 align-middle justify-center items-center">
+                <span class="group-hover:text-blue-500">About</span>
+                <svg
+                  class="w-6 h-6 p-1 group-hover:text-blue-500 group-hover:rotate-180 transition duration-200 group-hover:duration-200"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </div>
+
+              <!-- Sub Menu -->
+              <div
+                class="hidden group-hover:block h-max absolute top-[90%] bg-white text-black p-0 -left-5 w-[250px] border border-gray-200"
+              >
+                <ul class="flex flex-col">
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="./about.html" class="font-[600]"
+                      >About Jwang Properties</a
+                    >
+                  </li>
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="./story.html" class="font-[600]">My Story</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <!-- Search -->
+            <li class="group font-[600] leading-[40px] relative cursor-pointer">
+              <div class="flex gap-2 align-middle justify-center items-center">
+                <span class="group-hover:text-blue-500">Search</span>
+                <svg
+                  class="w-6 h-6 p-1 group-hover:text-blue-500 group-hover:rotate-180 transition duration-200 group-hover:duration-200"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </div>
+
+              <!-- Sub Menu -->
+              <div
+                class="hidden group-hover:block h-max absolute top-[90%] bg-white text-black p-0 -left-5 w-[250px] border border-gray-200"
+              >
+                <ul class="flex flex-col">
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="#" class="font-[600]">Search For Homes</a>
+                  </li>
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="#" class="font-[600]">Search With Maps</a>
+                  </li>
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="#" class="font-[600]">Search Neigbours</a>
+                  </li>
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="#" class="font-[600]">Search Schools</a>
+                  </li>
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="#" class="font-[600]">Commercial Properties</a>
+                  </li>
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="#" class="font-[600]"
+                      >Search International Listings</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <!-- Listings -->
+            <li class="group font-[600] leading-[40px] relative cursor-pointer">
+              <div class="flex gap-2 align-middle justify-center items-center">
+                <span class="group-hover:text-blue-500">Listings</span>
+                <svg
+                  class="w-6 h-6 p-1 group-hover:text-blue-500 group-hover:rotate-180 transition duration-200 group-hover:duration-200"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </div>
+
+              <!-- Sub Menu -->
+              <div
+                class="hidden group-hover:block h-max absolute top-[90%] bg-white text-black p-0 -left-5 w-[250px] border border-gray-200"
+              >
+                <ul class="flex flex-col">
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="./listings.html" class="font-[600]"
+                      >All Listings</a
+                    >
+                  </li>
+                  <li
+                    class="uppercase text-slate-900 font-bold hover:bg-gray-200 p-3 border-b border-b-gray-50"
+                  >
+                    <a href="./solid-listings.html" class="font-[600]">Solid Listings</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="font-[600] leading-[40px] cursor-pointer">
+              <a href="./OurAgent.html">Meet Our Agents</a>
+            </li>
+            <li class="font-[600] leading-[40px] cursor-pointer">
+              <a href="./testimonials.html">Testimonials</a>
+            </li>
+           
+            <li class="font-[600] leading-[40px] cursor-pointer">
+              <a href="./contact.html">Contact Us</a>
+            </li>
+            <li class="font-[600] leading-[40px] cursor-pointer">
+              <a href="./login.html">LOGIN</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Header Menu Bar -->
+        <span class="text-black show_aside block md:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-12 p-2 h-12 text-white"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </span>
+      </div>
+
+      <!-- Hero -->
+      <div
+        class="hero relative h-[600px] top-0 bg-[url('./assets/images/contact-shop.jpg')] bg-blend-normal px-32"
+        style="height: 600px;"
+      >
+        <div
+          class="flex flex-col justify-center align-middle items-center md:items-start h-full gap-10 w-full px-10 md:px-0 max-w-full md:max-w-[800px] m-auto md:m-0"
+        >
+          <h2
+            class="text-white font-[600] text-[50px] sm:text-[60px] md:text-[70px] leading-none md:leading-[30px] capitalize text-center md:text-left"
+          >
+            Contact Us
+          </h2>
+
+          
+        </div>
+      </div>
+    </header>
+
+    
+    <!--Main section by Toyosi-->
+    <main class="contact_us px-5 md:px-10 mt-20 block relative">
+      <div class="">
+        <div>
+          <h2
+            class="text-[32px] leading-[32px] px-[30px] py-[20px] font-normal font-sans"
+          >
+            Get In Touch
+
+            <span
+              class="p-2 bg-red-500 w-16 flex py-[2px] space-y-3 my-4 block"
+            >
+            </span>
+          </h2>
+          <p class="px-[30px] pt-0 text-gray-500">
+            Call us now to book an appointment. We’d love to sort all your
+            queries.
+            <br />
+            <br />
+            <br />
+          </p>
+        </div>
+        <!-- Grid cols -->
+        <div class="form px-2 bg-white sm:w[60%] md:w-full rounded grid grid-cols-1 md:grid-cols-2 gap-10 mb-10">
+          <div class="w-full bg-[#fff]">
+            <h1
+              class="mt-2 p-3 text-2xl font-semibold text-left block font-sans w-full"
+            >
+              Send Us A Message
+            </h1>
+            <div class="w-full">
+              <form action="./contact.html" class="w-full">
+                <input type="text" placeholder="Name" />
+
+                <input
+                  type="text"
+                  placeholder="Email"
+                  class="w-full"
+                  required
+                />
+                <textarea
+                  class="block border border-[#ccc] m-5 py-1 px-1 w-[35%]"
+                  name="Subject"
+                  id="Text"
+                  placeholder="Subject"
+                ></textarea>
+                <textarea
+                  class="border border-[#ccc] m-5 py-1 px-1 w-[35%]"
+                  name="text"
+                  id="Text"
+                  placeholder="Message"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+                <button
+                  type="submit"
+                  class="bg-red-500 py-3 px-7 text-white text-sm w-max block relative ml-6 hover:bg-orange-700 transition-all ease-in duration-200 hover:duration-200 mb-5"
+                >
+                  Contact us
+                </button>
+              </form>
+            </div>
+          </div>
+          <div style="box-shadow: 0px 0px 120px 0px rgb(0 0 0 / 8%);" class="block pb-5">
+            <h3 class="text-3xl mt-9 font-medium font-sans pl-14">
+              Contact Info
+            </h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10" style="padding: 10px 20px;">
+              <div class="flex mt-9">
+                <div
+                  class="rounded-full bg-red-200 flex justify-center align-middle items-center p-3 mr-2 h-max"
+                >
+                  <i class="fa-solid fa-phone rotate-[270deg] text-red-600"></i>
+                </div>
+                <div class="flex flex-col items-left pl-3">
+                  <h4 class="font-bold">Call Us</h4>
+                  <p class="mt-4 text-gray-500">(281)-451-0185</p>
+                </div>
+              </div>
+
+              <div class="flex mt-9">
+                <div
+                  class="rounded-full bg-red-200 flex justify-center align-middle items-center p-3 mr-2 h-max"
+                >
+                  <i
+                    class="fa-solid fa-location rotate-[270deg] text-red-600"
+                  ></i>
+                </div>
+                <div class="flex flex-col items-left pl-3 w-50%">
+                  <h4 class="font-bold">Our Loction</h4>
+                  <p class="mt-4 text-gray-500 block">
+                    2925 Richmond Ave, Ste 1200,
+                    <span>1200, Houston, TX 77098</span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex mt-9">
+                <div
+                  class="rounded-full bg-red-200 flex justify-center align-middle items-center p-3 mr-2 h-max"
+                >
+                  <i class="fa-solid fa-envelope text-red-600"></i>
+                </div>
+                <div class="flex flex-col items-left pl-3 w-50%">
+                  <h4 class="font-bold mb-2">Our Email</h4>
+                  <p class="mt-2 text-gray-500">
+                    jennywangrealestate @gmail.com
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex mt-9">
+                <div
+                  class="rounded-full bg-red-200 flex justify-center align-middle items-center p-3 mr-2 h-max"
+                >
+                  <i class="fa-solid fa-clock" rotate-[270deg] text-red-600"></i>
+                </div>
+                <div class="flex flex-col items-left pl-3">
+                  <h4 class="font-bold">Working hours</h4>
+                  <p class="mt-4 text-gray-500">
+                    Mon-Fri: 10AM-5PM Sat-Sun: 10AM-1PM
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h6 class="font-medium text-4xl ml-9 mt-9">Follow Us</h6>
+            </div>
+
+            <div>
+              <ul class="flex gap-5 pl-7 mt-6">
+                <li><a href="" class="rounded-full bg-red-500 text-lg w-10 h-10 flex align-middle items-center justify-center p-0"><i class="fa-brands fa-facebook-f text-white" ></i></a></li>
+
+                <li><a href="" class="rounded-full bg-red-500 text-lg w-10 h-10 flex align-middle items-center justify-center p-0"><i class="fa-brands fa-twitter text-white"></i></i></a></li>
+                <li><a href="" class="rounded-full bg-red-500 text-lg w-10 h-10 flex align-middle items-center justify-center p-0"><i class="fa-brands fa-instagram text-white"></i></a></li>
+                <li><a href="" class="rounded-full bg-red-500 text-lg w-10 h-10 flex align-middle items-center justify-center p-0"><i class="fa-brands fa-youtube text-white"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Map by toyosi -->
+      <div class="relative"> 
+        <h1><iframe class="sm:w-full w-full h-[400px]" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3464.5267262088328!2d-95.42496488563697!3d29.73346558199654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c0f0535b6f63%3A0xd23ff028dc02773f!2s2925%20Richmond%20Ave.%2C%20Houston%2C%20TX%2077098%2C%20USA!5e0!3m2!1sen!2sng!4v1665184540604!5m2!1sen!2sng"  style="border:0;" allowfullscreen="" loading="lazy;" referrerpolicy="no-referrer-when-downgrade"></iframe></h1>
+      </div>
+      
+    </main>
+    <!--Footer by Fortune-->
+    <footer class="bg-[#19212d]">
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 items-center p-10 border-b border-b-black justify-center"
+      >
+        <div class="space-y-5 px-0 mb-10">
+          <div class="w-full">
+            <img
+              class="w-[100px] rounded-full mx-[40px]"
+              src="./assets/images/logo-small-200.jpg"
+              alt=""
+            />
+          </div>
+
+          <p class="max-w-sm text-slate-200 px-0 mb-5 md:px-10 md:mb-0">
+            We offer one stop customized Strategies and Services Plans tailored
+            to each client's individual needs in both residential and commercial
+            real estate
+          </p>
+
+          <!-- Social Icons -->
+          <div
+            class="flex items-center  md:justify-center text-white text-[25px] relative flex-row gap-3 pb-5 "
+          >
+            <a href="">
+                <i
+                class="fab fa-facebook bg-red-600 p-2 rounded-full hover: bg-white hover:text-blue-500"
+                aria-hidden="true"
+              ></i>
+            </a>
+            <a href="">
+              <i
+                class="fab fa-twitter-square bg-red-600 p-2 rounded-full hover: bg-white hover:text-blue-500"
+                aria-hidden="true"
+              ></i>
+            </a>
+            <a href="">
+              <i
+                class="fab fa-youtube bg-red-600 p-2 rounded-full hover: bg-white hover:text-blue-500"
+                aria-hidden="true"
+              ></i>
+            </a>
+            <a href="">
+                <i
+                  class="fab fa-instagram bg-red-600 p-2 rounded-full hover: bg-white hover:text-blue-500"
+                  aria-hidden="true"
+                ></i>
+             </a>
+          </div>
+        </div>
+        <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 col-span-3">
+          <div class="space-y-3 text-white">
+            <div>
+              <h1 class="text-xl font-medium">Our Company</h1>
+            </div>
+
+            <div class="text-slate-200">
+              <a href="./about.html"><p>About Company</p></a>
+              <a href="./contact.html"><p>Contact</p></a>
+              <a href="./policy.html"><p>Privacy Policy</p></a>
+              <p>Terms and Conditions</p>
+            </div>
+          </div>
+          <div class="space-y-3 text-white">
+            <div>
+              <h1 class="font-medium text-xl">Our Services</h1>
+            </div>
+
+            <div class="text-slate-200">
+              <p>News</p>
+              <p>Video Production</p>
+              <p>Home Finding</p>
+              <p>Search Schools</p>
+            </div>
+          </div>
+          <div class="space-y-5 text-white">
+            <div>
+              <h1 class="font-lg text-lg">Contact details</h1>
+            </div>
+            <div class="text-slate-200">
+              <p>2925 Richmond Ave, Ste 1200</p>
+              <p>Houston, Tx 77098</p>
+              <p>(281)451-0185</p>
+              <p>jennywangrealestate@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:block md:flex-row">
+              <div class="text-white text-sm">
+                <p>Texas Real Estate Commission Consumer</p>
+                <p>Protection Notice</p>
+              </div>
+    
+              <div class="text-white text-sm">
+                <p>Texas Real Estate Commission Consumer</p>
+                <p>Protection Notice</p>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="flex flex-col md:flex-row justify-between items-center p-4 lg:p-[30px] align-center px-10 md:px-[90px] text-xs"
+      >
+        <p class="text-slate-200 align-center">
+          Copyright &copy; 2022 JWang Properties
+        </p>
+        <p class="text-slate-200 align-center">Powered by jwang Properties</p>
+      </div>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
